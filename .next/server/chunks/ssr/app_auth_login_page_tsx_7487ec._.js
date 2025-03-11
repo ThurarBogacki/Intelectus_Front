@@ -61,7 +61,7 @@ function Login() {
                                 className: "w-full",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "border-b border-white flex flex-col justify-center items-center space-y-4 pb-4",
+                                        className: `border-b  ${theme == "black" ? "border-white" : "border-[#D9D9D9]"} flex flex-col justify-center items-center space-y-4 pb-4`,
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                 className: `w-full p-4 rounded-xl ${theme == "dark" ? "bg-[#272727] text-white" : "bg-[#f4f4f4] text-[#818181]"}   focus:outline-none focus:ring-0 text-sm`,
@@ -159,7 +159,8 @@ function Login() {
                     className: `mt-[10px] ${theme == "dark" ? "text-white" : " text-[#818181]"} font-[14px]`,
                     children: [
                         "Não tem uma conta? ",
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                            href: "/auth/cadastro",
                             className: `${theme == "dark" ? "text-[#00fff3]" : "text-[#11cec5]"}`,
                             children: "Cadastre-se!"
                         }, void 0, false, {

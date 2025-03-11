@@ -22,7 +22,7 @@ export default function Login() {
 
           <div className="form w-full mt-12 flex-grow">
               <form className="w-full">
-                <div className="border-b border-white flex flex-col justify-center items-center space-y-4 pb-4">
+                <div className={`border-b  ${theme == "black" ? "border-white" : "border-[#D9D9D9]"} flex flex-col justify-center items-center space-y-4 pb-4`}>
                   <input 
                     className={`w-full p-4 rounded-xl ${theme == "dark" ? "bg-[#272727] text-white" : "bg-[#f4f4f4] text-[#818181]"}   focus:outline-none focus:ring-0 text-sm`}  
                     type="text" 
@@ -49,7 +49,7 @@ export default function Login() {
               </form>
           </div>
         </div>   
-        <p className={`mt-[10px] ${theme == "dark" ? "text-white" : " text-[#818181]"} font-[14px]`}>Não tem uma conta? <span className={`${theme == "dark" ? "text-[#00fff3]" : "text-[#11cec5]"}`}>Cadastre-se!</span></p>
+        <p className={`mt-[10px] ${theme == "dark" ? "text-white" : " text-[#818181]"} font-[14px]`}>Não tem uma conta? <a href="/auth/cadastro" className={`${theme == "dark" ? "text-[#00fff3]" : "text-[#11cec5]"}`}>Cadastre-se!</a></p>
         <button 
         onClick={toggleTheme} 
         className="absolute bottom-5 right-5 p-3  rounded-full shadow-lg"

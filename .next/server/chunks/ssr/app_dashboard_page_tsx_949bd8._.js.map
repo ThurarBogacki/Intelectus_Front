@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/arthu/OneDrive/Documentos/Thurar/Intelectus/app/dashboard/page.tsx"],"sourcesContent":["\"use client\"\r\nimport Navbar from \"../../componentes/Navbar\";\r\nimport { useTheme } from \"../../context/ThemeContext\";\r\n\r\nexport default function Home() {\r\n    const { theme, toggleTheme } = useTheme();\r\n  return (\r\n    <>\r\n        <div className=\"w-[100%] h-screen\">\r\n        <Navbar/>\r\n        </div>\r\n    </>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;;;;;AAEA;AAFA;;;;AAIe,SAAS;IACpB,MAAM,EAAE,KAAK,EAAE,WAAW,EAAE,GAAG,CAAA,GAAA,wHAAA,CAAA,WAAQ,AAAD;IACxC,qBACE;kBACI,cAAA,8OAAC;YAAI,WAAU;sBACf,cAAA,8OAAC;;;;;;;;;;;AAIT"}},
+    {"offset": {"line": 38, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
