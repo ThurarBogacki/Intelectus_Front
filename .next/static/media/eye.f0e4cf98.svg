@@ -1,0 +1,35 @@
+<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="19" height="19" fill="#525252"/>
+<g id="Dashboard">
+<g id="Dashboard (Desktop) - Black">
+<g clip-path="url(#clip0_163_2099)">
+<rect x="-401" y="-182" width="1440" height="1024" fill="#171717"/>
+<g id="Luz">
+<g id="Ellipse 1" filter="url(#filter0_f_163_2099)">
+<path d="M912 191.5C912 230.988 722.616 263 489 263C255.384 263 66 230.988 66 191.5C66 152.012 255.384 120 489 120C722.616 120 912 152.012 912 191.5Z" fill="#5BC4FF" fill-opacity="0.48"/>
+<path d="M911.5 191.5C911.5 196.221 908.671 200.912 903.088 205.524C897.51 210.132 889.254 214.598 878.573 218.867C857.216 227.402 826.283 235.098 788.023 241.565C711.51 254.498 605.789 262.5 489 262.5C372.211 262.5 266.49 254.498 189.977 241.565C151.717 235.098 120.784 227.402 99.427 218.867C88.7463 214.598 80.4899 210.132 74.9123 205.524C69.3292 200.912 66.5 196.221 66.5 191.5C66.5 186.779 69.3292 182.088 74.9123 177.476C80.4899 172.868 88.7463 168.402 99.427 164.133C120.784 155.598 151.717 147.902 189.977 141.435C266.49 128.502 372.211 120.5 489 120.5C605.789 120.5 711.51 128.502 788.023 141.435C826.283 147.902 857.216 155.598 878.573 164.133C889.254 168.402 897.51 172.868 903.088 177.476C908.671 182.088 911.5 186.779 911.5 191.5Z" stroke="black"/>
+</g>
+</g>
+<g id="Title">
+<g id="vuesax/broken/eye">
+<g id="eye">
+<path id="Vector" d="M7.46069 11.0417C7.16006 10.6024 6.99048 10.0705 6.99048 9.50006C6.99048 7.97381 8.22381 6.74048 9.75006 6.74048C11.2763 6.74048 12.5096 7.97381 12.5096 9.50006C12.5096 11.0263 11.2763 12.2596 9.75006 12.2596" stroke="#D9D9D9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M14.0358 4.55129C12.7331 3.62629 11.2685 3.12524 9.75 3.12524C7.02896 3.12524 4.49292 4.72858 2.72771 7.50358C2.03396 8.59045 2.03396 10.4173 2.72771 11.5042C4.49292 14.2792 7.02896 15.8825 9.75 15.8825C12.471 15.8825 15.0071 14.2792 16.7723 11.5042C17.466 10.4173 17.466 8.59045 16.7723 7.50358" stroke="#D9D9D9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+<rect x="-400.5" y="-181.5" width="1439" height="1023" stroke="#1F1F1F"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_163_2099" x="-234" y="-180" width="1446" height="743" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_163_2099"/>
+</filter>
+<clipPath id="clip0_163_2099">
+<rect x="-401" y="-182" width="1440" height="1024" fill="white"/>
+</clipPath>
+</defs>
+</svg>

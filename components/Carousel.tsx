@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { useTheme } from "../context/ThemeContext";
 
 interface CarouselProps {
     children: React.ReactNode | React.ReactNode[];
@@ -11,6 +12,7 @@ interface CarouselProps {
 
 export const Carousel: React.FC<CarouselProps> = ({ children }) => {
     const slides = Array.isArray(children) ? children : [children];
+    const { theme } = useTheme();
 
     return (
         <Swiper
@@ -19,7 +21,7 @@ export const Carousel: React.FC<CarouselProps> = ({ children }) => {
             pagination={{ clickable: true }}
             loop={true}
             grabCursor={true}
-            className="w-full h-[400px] min-w-[300px] bg-[#0C729D29] bg-opacity-20 rounded-2xl flex items-center justify-center"
+            className={`w-full h-[400px] min-w-[300px] bg-[#0c729d] rounded-2xl flex items-center justify-center ${theme === 'dark' ? 'bg-opacity-20 ' : 'bg-opacity-100 text-[#FFF]'}`}
         >
             {slides.map((child, index) => (
                 <SwiperSlide 
