@@ -7,9 +7,12 @@ import { ContentBox } from "../../components/Content-box";
 import { Carousel } from "../../components/Carousel";
 import RevenueChart from "../../components/Revenue-chart";
 import { useTheme } from "../../context/ThemeContext";
+import { FaRegMoon } from "react-icons/fa";
+import { BsSun } from "react-icons/bs";
 
 import Image from "next/image";
-import EyeIcon from "../../public/images/DashboardIcons/eye.svg";
+import EyeOpen from "../../public/images/DashboardIcons/eye-open.svg";
+import EyeClosed from "../../public/images/DashboardIcons/eye-closed.svg";
 
 export default function Home() {
     const { theme, toggleTheme } = useTheme(); // 🔹 Obtendo o tema do contexto
@@ -17,6 +20,7 @@ export default function Home() {
     const [user, setUser] = useState<string | null>(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
+    const [isHidden, setIsHidden] = useState(false);
 
     useEffect(() => {
         async function fetchUser() {
@@ -50,16 +54,16 @@ export default function Home() {
                     <div className="container">
                         <div className="text-base mb-8 inline-flex items-center gap-2">
                             <span>RESUMO</span>
-                            <a href="#"> <Image src={EyeIcon} alt="Eye Icon" className="w-5 h-5 bg-inherit" /> </a>
+                            <button onClick={() => setIsHidden(!isHidden)}> <Image src={isHidden ? EyeOpen: EyeClosed} alt="Eye Icon" className="w-5 h-5 bg-inherit" /> </button>
                         </div>
                     </div>
 
                     {/* Seção de Resumo */}
                     <div className="grid grid-cols-4 gap-4 w-full">
-                        <BriefBoxComponent value={1000} secondaryValue={80} title="sales" />
-                        <BriefBoxComponent value={5000} title="balance" />
-                        <BriefBoxComponent value={200} title="pending" />
-                        <BriefBoxComponent value={1} secondaryValue={4} title="mission" />
+                        <BriefBoxComponent value={1000} secondaryValue={80} title="sales" isHidden={isHidden} />
+                        <BriefBoxComponent value={5000} title="balance" isHidden={isHidden} />
+                        <BriefBoxComponent value={200} title="pending" isHidden={isHidden} />
+                        <BriefBoxComponent value={1} secondaryValue={4} title="mission" isHidden={isHidden} />
                     </div>
 
                     <div className="grid grid-cols-3 gap-4 w-full mt-11">
@@ -88,7 +92,7 @@ export default function Home() {
                         onClick={toggleTheme} 
                         className="fixed bottom-5 right-5 p-3 rounded-full shadow-lg"
                     >
-                        {theme === "dark" ? "🌙" : "☀️"}
+                        {theme == "dark" ? ( <FaRegMoon className="text-white" size={24} />) : (<BsSun className="text-[#888888]" size={24} />)} 
                     </button>
 
                 </div>
