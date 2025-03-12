@@ -11,6 +11,20 @@ export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
+  const [phoneRaw, setPhoneRaw] = useState(""); // Apenas números
+  const [phoneFormatted, setPhoneFormatted] = useState(""); // Exibição formatada
+  
+  const handlePhoneChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+      let value = event.target.value.replace(/\D/g, ""); 
+      setPhoneRaw(value); 
+  
+      if (value.length <= 10) {
+          setPhoneFormatted(value.replace(/^(\d{2})(\d{4})(\d{0,4})/, "($1) $2-$3"));
+      } else {
+          setPhoneFormatted(value.replace(/^(\d{2})(\d{5})(\d{0,4})/, "($1) $2-$3"));
+      }
+  };
+
   return (
     <div className={`w-full ${theme == "dark" ? "bg-black" : ""} min-h-screen flex justify-center items-center overflow-auto transition-all duration-500 ease-in-out`}>
       <div className={`w-full min-h-screen ${theme == "dark" ? "bg-gradient-radial-small" : "bg-white"} bg-opacity-10 flex flex-col justify-center items-center p-4`}>   
@@ -41,10 +55,15 @@ export default function Login() {
                   type="text" 
                   placeholder="E-mail"
                 />
-                <input 
-                  className={`w-full p-4 rounded-xl ${theme == "dark" ? "bg-[#272727] text-white" : "bg-[#f4f4f4] text-[#818181]"} focus:outline-none focus:ring-0 text-sm`}
-                  type="number" 
+                <input
+                  className={`w-full p-4 rounded-xl ${
+                    theme === "dark" ? "bg-[#272727] text-white" : "bg-[#f4f4f4] text-[#818181]"
+                  } focus:outline-none focus:ring-0 text-sm`}
+                  type="text"
                   placeholder="Telefone"
+                  value={phoneFormatted} // Mostra o número formatado
+                  onChange={handlePhoneChange}
+                  maxLength={15} // Evita digitação excessiva
                 />
               </div>
 

@@ -43,11 +43,11 @@ export default function Home() {
     return (
         <>
             {/* 🔹 Aplica o tema dinamicamente */}
-            <div className={`w-full h-screen flex ${theme === "dark" ? "bg-black text-white" : "bg-white text-black"}`}>
+            <div className={`w-full min-h-screen flex ${theme === "dark" ? "bg-black text-white" : "bg-white text-black"}`}>
                 <Navbar />
 
-                <div className="flex flex-col flex-1 px-[64px]">
-                    <h1 className="text-3xl font-bold mb-4 mt-[100px]">
+                <div className="flex flex-col flex-1 px-6 md:px-8 xl:px-16">
+                    <h1 className="text-3xl font-bold mb-4 mt-16">
                         {loading ? "Carregando..." : error ? error : `Boas vindas, ${user}`}
                     </h1>
 
@@ -59,15 +59,15 @@ export default function Home() {
                     </div>
 
                     {/* Seção de Resumo */}
-                    <div className="grid grid-cols-4 gap-4 w-full">
+                    <div className="grid grid-cols-1 xl:grid-cols-4 gap-4 w-full">
                         <BriefBoxComponent value={1000} secondaryValue={80} title="sales" isHidden={isHidden} />
                         <BriefBoxComponent value={5000} title="balance" isHidden={isHidden} />
                         <BriefBoxComponent value={200} title="pending" isHidden={isHidden} />
                         <BriefBoxComponent value={1} secondaryValue={4} title="mission" isHidden={isHidden} />
                     </div>
 
-                    <div className="grid grid-cols-3 gap-4 w-full mt-11">
-                        <div className="col-span-2">
+                    <div className="grid grid-cols-1 xl:grid-cols-3 gap-4 w-full mt-11">
+                        <div className="xl:col-span-2">
                             <RevenueChart />
                         </div>
                         <div>
@@ -79,10 +79,10 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-4 gap-4 w-full mt-11">
+                    <div className="grid grid-cols-1 xl:grid-cols-4 gap-4 w-full mt-12 mb-16">
                         <ContentBox title="Conteúdo">Lorem ipsum dolor sit amet</ContentBox>
                         <ContentBox title="Conteúdo">Lorem ipsum dolor sit amet</ContentBox>
-                        <div className="col-span-2">
+                        <div className="xl:col-span-2">
                             <ContentBox title="Conteúdo">Lorem ipsum dolor sit amet</ContentBox>
                         </div>
                     </div>

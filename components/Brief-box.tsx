@@ -10,7 +10,7 @@ type BriefBoxProps = ComponentProps<'div'> & {
 };
 
 const briefBox = tv({
-    base: 'flex flex-col w-full min-h-[100px] min-w-[242px] border border-[#818181] rounded-lg p-4',
+    base: 'flex flex-col w-full min-h-[100px] min-w-[160px] border border-[#818181] rounded-lg p-4',
 });
 
 export function BriefBoxComponent({ value, secondaryValue, title, isHidden, ...props }: BriefBoxProps) {
