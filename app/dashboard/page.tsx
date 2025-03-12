@@ -2,30 +2,32 @@
 import { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar";
 import { BriefBoxComponent } from "../../components/Brief-box";
+import { ContentBox } from "../../components/Content-box";
+import { Carousel } from "../../components/Carousel";
 import { useTheme } from "../../context/ThemeContext";
 
 export default function Home() {
-  const { theme, toggleTheme } = useTheme();
-  const [user, setUser] = useState<string | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-  useEffect(() => {
-      async function fetchUser() {
-          try {
-              const response = await fetch("/api/user"); 
-              if (!response.ok) {
-                  throw new Error("Erro ao buscar usuário");
-              }
-              const data = await response.json();
-              setUser(data.name); 
-          } catch (err) {
-              setError("Falha ao carregar usuário");
-          } finally {
-              setLoading(false);
-          }
-      }
-      fetchUser();
-  }, []);
+    const { theme, toggleTheme } = useTheme();
+    const [user, setUser] = useState<string | null>(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState<string | null>(null);
+    useEffect(() => {
+        async function fetchUser() {
+            try {
+                const response = await fetch("/api/user"); 
+                if (!response.ok) {
+                    throw new Error("Erro ao buscar usuário");
+                }
+                const data = await response.json();
+                setUser(data.name); 
+            } catch (err) {
+                setError("Falha ao carregar usuário");
+            } finally {
+                setLoading(false);
+            }
+        }
+        fetchUser();
+    }, []);
 
     return (
         <>
@@ -52,19 +54,28 @@ export default function Home() {
                             {/* Gráfico */}
                         </div>
                         <div>
-                            {/* Carrosel */}
+                            <Carousel>
+                                <div className="text-[#FFF] font-3xl font-bold">BANNERS ROTATIVOS AQUI</div>
+                                <div className="text-[#FFF] font-3xl font-bold">BANNERS ROTATIVOS AQUI</div>
+                            </Carousel>
                         </div>
                     </div>
 
                     <div className="grid grid-cols-4 gap-4 w-full mt-11">
                         <div>
-                            <BriefBoxComponent title="content" content="Conteúdo" />
+                            <ContentBox title="Conteúdo">
+                                Lorem ipsum dolor sit amet
+                            </ContentBox>
                         </div>
                         <div>
-                            <BriefBoxComponent title="content" content="Conteúdo" />
+                            <ContentBox title="Conteúdo">
+                                Lorem ipsum dolor sit amet
+                            </ContentBox>
                         </div>
                         <div className="col-span-2">
-                            <BriefBoxComponent title="content" content="Conteúdo" />
+                            <ContentBox title="Conteúdo">
+                                Lorem ipsum dolor sit amet
+                            </ContentBox>
                         </div>
                     </div>
 
