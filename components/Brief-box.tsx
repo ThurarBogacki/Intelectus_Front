@@ -16,8 +16,8 @@ const briefBox = tv({
 export function BriefBoxComponent({ value, secondaryValue, title, isHidden, ...props }: BriefBoxProps) {
     const { theme } = useTheme();
 
-    const displayValue = isHidden ? "****" : `R$ ${value?.toFixed(2)}`;
-    const displaySecondaryValue = isHidden ? "****" : `R$ ${secondaryValue?.toFixed(2)}`;
+    const displayValue = isHidden ? "●●●●" : `R$ ${value?.toFixed(2)}`;
+    const displaySecondaryValue = isHidden ? "●●●●" : `R$ ${secondaryValue?.toFixed(2)}`;
 
     return (
         <div className={briefBox()} {...props}>

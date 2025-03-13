@@ -42,8 +42,7 @@ export default function Home() {
 
     return (
         <>
-            {/* 🔹 Aplica o tema dinamicamente */}
-            <div className={`w-full min-h-screen flex ${theme === "dark" ? "bg-black text-white" : "bg-white text-black"}`}>
+            <div className={`relative w-full min-h-screen flex ${theme === "dark" ? "bg-[#171717] text-white bg-overlay" : "bg-white text-black"}`}>
                 <Navbar />
 
                 <div className="flex flex-col flex-1 px-6 md:px-8 xl:px-16">
@@ -51,7 +50,7 @@ export default function Home() {
                         {loading ? "Carregando..." : error ? error : `Boas vindas, ${user}`}
                     </h1>
 
-                    <div className="container">
+                    <div className="relative container">
                         <div className="text-base mb-8 inline-flex items-center gap-2">
                             <span>RESUMO</span>
                             <button onClick={() => setIsHidden(!isHidden)}> <Image src={isHidden ? EyeOpen: EyeClosed} alt="Eye Icon" className="w-5 h-5 bg-inherit" /> </button>
@@ -59,14 +58,15 @@ export default function Home() {
                     </div>
 
                     {/* Seção de Resumo */}
-                    <div className="grid grid-cols-1 xl:grid-cols-4 gap-4 w-full">
+                    <div className="relative grid grid-cols-1 xl:grid-cols-4 gap-4 w-full">
                         <BriefBoxComponent value={1000} secondaryValue={80} title="sales" isHidden={isHidden} />
                         <BriefBoxComponent value={5000} title="balance" isHidden={isHidden} />
                         <BriefBoxComponent value={200} title="pending" isHidden={isHidden} />
                         <BriefBoxComponent value={1} secondaryValue={4} title="mission" isHidden={isHidden} />
                     </div>
 
-                    <div className="grid grid-cols-1 xl:grid-cols-3 gap-4 w-full mt-11">
+                    {/* Seção de gráficos e banners*/}
+                    <div className="relative grid grid-cols-1 xl:grid-cols-3 gap-4 w-full mt-11">
                         <div className="xl:col-span-2">
                             <RevenueChart />
                         </div>
@@ -79,7 +79,8 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-1 xl:grid-cols-4 gap-4 w-full mt-12 mb-16">
+                    {/* Seção de conteúdo */}
+                    <div className="relative grid grid-cols-1 xl:grid-cols-4 gap-4 w-full mt-12 mb-16">
                         <ContentBox title="Conteúdo">Lorem ipsum dolor sit amet</ContentBox>
                         <ContentBox title="Conteúdo">Lorem ipsum dolor sit amet</ContentBox>
                         <div className="xl:col-span-2">
@@ -87,7 +88,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    {/* 🔹 Botão para alternar o tema */}
+                    {/* Botão para alternar o tema */}
                     <button 
                         onClick={toggleTheme} 
                         className="fixed bottom-5 right-5 p-3 rounded-full shadow-lg"
