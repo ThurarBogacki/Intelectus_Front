@@ -381,6 +381,12 @@ img, video {
   width: 100%;
 }
 
+@media (width >= 500px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
 @media (width >= 640px) {
   .container {
     max-width: 640px;
@@ -455,8 +461,16 @@ img, video {
   margin-bottom: 2rem;
 }
 
+.mb-\[20px\] {
+  margin-bottom: 20px;
+}
+
 .ml-0 {
   margin-left: 0;
+}
+
+.ml-\[72px\] {
+  margin-left: 72px;
 }
 
 .mt-11 {
@@ -479,16 +493,20 @@ img, video {
   margin-top: 1.25rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .mt-\[10px\] {
   margin-top: 10px;
 }
 
+.mt-\[20px\] {
+  margin-top: 20px;
+}
+
 .mt-\[40px\] {
   margin-top: 40px;
+}
+
+.mt-\[60px\] {
+  margin-top: 60px;
 }
 
 .flex {
@@ -515,10 +533,6 @@ img, video {
   height: 1.5rem;
 }
 
-.h-7 {
-  height: 1.75rem;
-}
-
 .h-\[400px\] {
   height: 400px;
 }
@@ -533,6 +547,10 @@ img, video {
 
 .h-full {
   height: 100%;
+}
+
+.max-h-screen {
+  max-height: 100vh;
 }
 
 .min-h-\[100px\] {
@@ -553,10 +571,6 @@ img, video {
 
 .w-6 {
   width: 1.5rem;
-}
-
-.w-7 {
-  width: 1.75rem;
 }
 
 .w-\[72px\] {
@@ -859,16 +873,16 @@ img, video {
   line-height: 2.25rem;
 }
 
-.text-\[12px\] {
-  font-size: 12px;
-}
-
 .text-\[14px\] {
   font-size: 14px;
 }
 
 .text-\[16px\] {
   font-size: 16px;
+}
+
+.text-\[8px\] {
+  font-size: 8px;
 }
 
 .text-base {
@@ -1088,8 +1102,12 @@ body {
 }
 
 @media (width >= 768px) {
-  .md\:ml-\[60px\] {
-    margin-left: 60px;
+  .md\:ml-\[15\%\] {
+    margin-left: 15%;
+  }
+
+  .md\:ml-\[22\%\] {
+    margin-left: 22%;
   }
 
   .md\:mt-10 {
@@ -1098,6 +1116,14 @@ body {
 
   .md\:block {
     display: block;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:h-7 {
@@ -1116,13 +1142,29 @@ body {
     width: 2rem;
   }
 
-  .md\:w-\[17\%\] {
-    width: 17%;
+  .md\:w-\[22\%\] {
+    width: 22%;
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
+  .md\:justify-normal {
+    justify-content: normal;
+  }
+
+  .md\:p-3 {
+    padding: .75rem;
   }
 
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .md\:text-\[12px\] {
+    font-size: 12px;
   }
 
   .md\:text-\[16px\] {

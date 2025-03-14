@@ -15,7 +15,13 @@ export default {
       backgroundImage: {
         'gradient-radial-small': 'radial-gradient(ellipse 600px 400px at center 38%, rgba(0, 255, 243, 0.3) 10%, rgba(23, 23, 23, 0.8) 90%)',
       },
+      screens:  {
+        'md2' : '500px',
+      }
     },
   },
   plugins: [],
+  corePlugins: {
+    filter: true,
+  }
 };
