@@ -13,6 +13,28 @@ import StandardIcon from "../../public/images/PlanIcons/standard_icon.png";
 import PremiumIcon from "../../public/images/PlanIcons/premium_icon.png";
 import PositiveIcon from "../../public/images/PlanIcons/positive_icon.svg";
 import NegativeIcon from "../../public/images/PlanIcons/negative_icon.svg";
+import UserBox from "../../components/User-box";
+import BinaryTree from "../../components/User-tree";
+
+const treeData = {
+  name: "/images/PlanIcons/shape-premium.svg",
+  children: [
+    {
+      name: "/images/PlanIcons/shape-partner.svg",
+      children: [
+        { name: "/images/PlanIcons/shape-standard.svg" },
+        { name: "/images/PlanIcons/shape-premium.svg" },
+      ],
+    },
+    {
+      name: "/images/PlanIcons/shape-standard.svg",
+      children: [
+        { name: "/images/PlanIcons/shape-standard.svg" },
+        { name: "/images/PlanIcons/shape-premium.svg" },
+      ],
+    },
+  ],
+};
 
 export default function Home() {
   const { theme, toggleTheme } = useTheme();
@@ -39,8 +61,8 @@ export default function Home() {
 
           </div>
 
-          <div className={`w-full my-6 px-10 py-12 justify-items-center grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4`}>
-            <div className="m-4">
+          <div className={`w-full my-6 px-10 py-12 justify-items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4`}>
+            <div className="m-4 xl:m-2">
               <PlanCard>
                 <div className="w-full flex flex-col items-center text-center">
                   <Image src={FreeIcon} className="w-[60%] h-auto" alt="Moeda do plano Free" />
@@ -51,7 +73,7 @@ export default function Home() {
               </PlanCard>
             </div>
 
-            <div className="m-4">
+            <div className="m-4 xl:m-2">
               <PlanCard>
                 <div className="w-full flex flex-col items-center text-center">
                   <Image src={PartnerIcon} className="w-[60%] h-auto" alt="Moeda do plano Partner" />
@@ -64,20 +86,20 @@ export default function Home() {
                   <div className="w-full mt-4 space-y-2 px-4 mb-4">
                     <div className="flex items-center justify-center space-x-2 py-3">
                       <Image src={PositiveIcon} className="text-xs col-span-1" alt="Positive" />
-                      <p className="col-span-1 text-xs text-justify">Recebe um ebook da Intelectus como bônus.</p>
+                      <p className="col-span-1 text-xs text-left">Recebe um ebook da Intelectus como bônus.</p>
                     </div>
                     <div className="flex items-center justify-center space-x-2 py-3">
                       <Image src={PositiveIcon} className="text-xs col-span-1" alt="Positive" />
-                      <p className="col-span-1 text-xs text-justify">Garante posição no sistema binário.</p>
+                      <p className="col-span-1 text-xs text-left">Garante posição no sistema binário.</p>
                     </div>
 
                     <div className="flex items-center justify-center space-x-2 py-3">
                       <Image src={NegativeIcon} className="text-xs col-span-1" alt="Negative" />
-                      <p className="col-span-1 text-xs text-justify">Não recebe comissão de rede.</p>
+                      <p className="col-span-1 text-xs text-left">Não recebe comissão de rede.</p>
                     </div>
                     <div className="flex items-center justify-center space-x-2 py-3">
                       <Image src={NegativeIcon} className="text-xs col-span-1" alt="Negative" />
-                      <p className="col-span-1 text-xs text-justify">Não é obrigado a divulgar nenhum produto diariamente.</p>
+                      <p className="col-span-1 text-xs text-left">Não é obrigado a divulgar nenhum produto diariamente.</p>
                     </div>
                   </div>
 
@@ -91,7 +113,7 @@ export default function Home() {
               </PlanCard>
             </div>
 
-            <div className="m-4">
+            <div className="m-4 xl:m-2">
               <PlanCard>
                 <div className="w-full flex flex-col items-center text-center">
                   <Image src={StandardIcon} className="w-[60%] h-auto" alt="Moeda do plano Partner" />
@@ -104,15 +126,15 @@ export default function Home() {
                   <div className="w-full mt-4 space-y-2 px-4 mb-4">
                     <div className="flex items-center justify-center space-x-2 py-3">
                       <Image src={PositiveIcon} className="text-xs col-span-1" alt="Positive" />
-                      <p className="col-span-1 text-xs text-justify">Recebe comissões de rede (participa da estrutura de bonificações).</p>
+                      <p className="col-span-1 text-xs text-left">Recebe comissões de rede (participa da estrutura de bonificações).</p>
                     </div>
                     <div className="flex items-center justify-center space-x-2 py-3">
                       <Image src={PositiveIcon} className="text-xs col-span-1" alt="Positive" />
-                      <p className="col-span-1 text-xs text-justify"><span className="font-bold">Obrigação</span> de postar 1x ao dia o link de afiliado de produtos selecionados pela Intelectus.</p>
+                      <p className="col-span-1 text-xs text-left"><span className="font-bold">Obrigação</span> de postar 1x ao dia o link de afiliado de produtos selecionados pela Intelectus.</p>
                     </div>
                     <div className="flex items-center justify-center space-x-2 py-3">
                       <Image src={PositiveIcon} className="text-xs col-span-1" alt="Positive" />
-                      <p className="col-span-1 text-xs text-justify"><span className="font-bold">Garantia semanal</span> de <span className="font-bold text-[#EBBB00]">
+                      <p className="col-span-1 text-xs text-left"><span className="font-bold">Garantia semanal</span> de <span className="font-bold text-[#EBBB00]">
                           $7,50
                         </span> em INTEL via recompra programada, caso a comissão de vendas não atinja esse valor mínimo.</p>
                     </div>
@@ -128,7 +150,7 @@ export default function Home() {
               </PlanCard>
             </div>
 
-            <div className="m-4">
+            <div className="m-4 xl:m-2">
               <PlanCard>
                 <div className="w-full flex flex-col items-center text-center">
                   <Image src={PremiumIcon} className="w-[60%] h-auto" alt="Moeda do plano Partner" />
@@ -141,15 +163,15 @@ export default function Home() {
                   <div className="w-full mt-4 space-y-2 px-4 mb-4">
                     <div className="flex items-center justify-center space-x-2 py-3">
                       <Image src={PositiveIcon} className="text-xs col-span-1" alt="Positive" />
-                      <p className="col-span-1 text-xs text-justify">Recebe comissões de rede (participa da estrutura de bonificações).</p>
+                      <p className="col-span-1 text-xs text-left">Recebe comissões de rede (participa da estrutura de bonificações).</p>
                     </div>
                     <div className="flex items-center justify-center space-x-2 py-3">
                       <Image src={PositiveIcon} className="text-xs col-span-1" alt="Positive" />
-                      <p className="col-span-1 text-xs text-justify"><span className="font-bold">Obrigação</span> de postar 1x ao dia o link de afiliado de produtos selecionados pela Intelectus.</p>
+                      <p className="col-span-1 text-xs text-left"><span className="font-bold">Obrigação</span> de postar 1x ao dia o link de afiliado de produtos selecionados pela Intelectus.</p>
                     </div>
                     <div className="flex items-center justify-center space-x-2 py-3">
                       <Image src={PositiveIcon} className="text-xs col-span-1" alt="Positive" />
-                      <p className="col-span-1 text-xs text-justify"><span className="font-bold">Garantia semanal</span> de <span className={`font-bold ${theme === "dark" ? "text-[#00FFF3]" : "text-[#11CEC5]"}`}>
+                      <p className="col-span-1 text-xs text-left"><span className="font-bold">Garantia semanal</span> de <span className={`font-bold ${theme === "dark" ? "text-[#00FFF3]" : "text-[#11CEC5]"}`}>
                           $37,50
                         </span> em INTEL via recompra programada, caso a comissão de vendas não atinja esse valor mínimo.</p>
                     </div>
@@ -181,6 +203,18 @@ export default function Home() {
             <p className={`text-base mb-8 ${theme === "dark" ? "text-[#FFF]" : "text-[#6C6C6C]"}`}>
               Bonificação que se acumulam conforme a rede cresce e as vendas acontecem:
             </p>
+          </div>
+
+          <div className={`w-full flex flex-col lg:flex-row items-center lg:items-start px-6 md:px-8 xl:px-16 ${theme === "dark" ? "bg-[#232323]" : "bg-[#E6E6E6]"}`}>
+            
+            <div className="w-full lg:w-1/4 flex justify-center">
+              <UserBox />
+            </div>
+
+            <div className="w-full mb-16 lg:w-3/4 flex justify-center border border-[#5e5e5e57] rounded-3xl">
+              <BinaryTree treeData={treeData}/>
+            </div>
+
           </div>
 
           <button

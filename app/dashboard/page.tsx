@@ -72,9 +72,9 @@ export default function Home() {
                         </div>
                         <div>
                             <Carousel>
-                                <div className="font-3xl font-bold">BANNERS ROTATIVOS AQUI</div>
-                                <div className="font-3xl font-bold">BANNERS ROTATIVOS AQUI</div>
-                                <div className="font-3xl font-bold">BANNERS ROTATIVOS AQUI</div>
+                                <div className="text-5xl font-bold">BANNERS ROTATIVOS AQUI</div>
+                                <div className="text-5xl font-bold">BANNERS ROTATIVOS AQUI</div>
+                                <div className="text-5xl font-bold">BANNERS ROTATIVOS AQUI</div>
                             </Carousel>
                         </div>
                     </div>
