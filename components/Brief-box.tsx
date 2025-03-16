@@ -17,7 +17,7 @@ export function BriefBoxComponent({ value, secondaryValue, title, isHidden, ...p
     const { theme } = useTheme();
 
     const displayValue = isHidden ? "●●●●" : `R$ ${value?.toFixed(2)}`;
-    const displaySecondaryValue = isHidden ? "●●●●" : `R$ ${secondaryValue?.toFixed(2)}`;
+    const displaySecondaryValue = isHidden ? "●●●●": `R$ ${secondaryValue?.toFixed(2)}`;
 
     return (
         <div className={briefBox()} {...props}>
@@ -28,9 +28,25 @@ export function BriefBoxComponent({ value, secondaryValue, title, isHidden, ...p
                         <span className="text-xs text-[#A9A9A9]">ontem</span>
                     </div>
                     <div className="flex justify-between items-center mt-5">
-                        <span className={`text-xl font-bold ${theme === 'dark' ? 'text-[#00FFF3]' : 'text-[#11CEC5]'}`}>{displayValue}</span>
+                        <span 
+                            className={`text-xl font-bold ${theme === 'dark' ? 'text-[#00FFF3]' : 'text-[#11CEC5]'}`}
+                            style={{ userSelect: "none", pointerEvents: isHidden ? "none" : "auto" }}
+                            onCopy={(e) => e.preventDefault()}
+                            onContextMenu={(e) => e.preventDefault()}
+                            onDragStart={(e) => e.preventDefault()}
+                        >
+                            {displayValue}
+                        </span>
                         {secondaryValue !== undefined && (
-                            <span className="text-base font-bold">{displaySecondaryValue}</span>
+                            <span 
+                                className="text-base font-bold"
+                                style={{ userSelect: "none", pointerEvents: isHidden ? "none" : "auto" }}
+                                onCopy={(e) => e.preventDefault()}
+                                onContextMenu={(e) => e.preventDefault()}
+                                onDragStart={(e) => e.preventDefault()}
+                            >
+                                {displaySecondaryValue}
+                            </span>
                         )}
                     </div>
                 </>
@@ -39,14 +55,30 @@ export function BriefBoxComponent({ value, secondaryValue, title, isHidden, ...p
             {title === 'balance' && (
                 <>
                     <h3 className={`font-bold text-base ${theme === 'dark' ? 'text-[#FFF]' : 'text-[#6C6C6C]'}`}>Saldo disponível</h3>
-                    <span className={`mt-5 text-xl font-bold ${theme === 'dark' ? 'text-[#00FFF3]' : 'text-[#11CEC5]'}`}>{displayValue}</span>
+                    <span 
+                        className={`mt-5 text-xl font-bold ${theme === 'dark' ? 'text-[#00FFF3]' : 'text-[#11CEC5]'}`}
+                        style={{ userSelect: "none", pointerEvents: isHidden ? "none" : "auto" }}
+                        onCopy={(e) => e.preventDefault()}
+                        onContextMenu={(e) => e.preventDefault()}
+                        onDragStart={(e) => e.preventDefault()}
+                    >
+                        {displayValue}
+                    </span>
                 </>
             )}
 
             {title === 'pending' && (
                 <>
                     <h3 className={`font-bold text-base ${theme === 'dark' ? 'text-[#FFF]' : 'text-[#6C6C6C]'}`}>Pendente</h3>
-                    <span className={`mt-5 text-xl font-bold ${theme === 'dark' ? 'text-[#00FFF3]' : 'text-[#11CEC5]'}`}>{displayValue}</span>
+                    <span 
+                        className={`mt-5 text-xl font-bold ${theme === 'dark' ? 'text-[#00FFF3]' : 'text-[#11CEC5]'}`}
+                        style={{ userSelect: "none", pointerEvents: isHidden ? "none" : "auto" }}
+                        onCopy={(e) => e.preventDefault()}
+                        onContextMenu={(e) => e.preventDefault()}
+                        onDragStart={(e) => e.preventDefault()}
+                    >
+                        {displayValue}
+                    </span>
                 </>
             )}
 

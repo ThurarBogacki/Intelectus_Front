@@ -1,0 +1,15 @@
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push([
+    "static/chunks/app_planos_page_tsx_084113._.js",
+    {},
+]);
+(globalThis.TURBOPACK_CHUNK_LISTS = globalThis.TURBOPACK_CHUNK_LISTS || []).push({
+  "path": "static/chunks/app_planos_page_tsx_084113._.js",
+  "chunks": [
+    "static/chunks/_3b08b2._.js",
+    "static/chunks/7d341_next_c54d1f._.js",
+    "static/chunks/e056e_react-icons_bs_index_mjs_05e829._.js",
+    "static/chunks/e056e_react-icons_fa_index_mjs_19ed18._.js",
+    "static/chunks/e056e_react-icons_lib_046ab6._.js"
+  ],
+  "source": "dynamic"
+});
