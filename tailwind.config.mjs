@@ -16,7 +16,8 @@ export default {
         'gradient-radial-small': 'radial-gradient(ellipse 600px 400px at center 38%, rgba(0, 255, 243, 0.3) 10%, rgba(23, 23, 23, 0.8) 90%)',
       },
       screens:  {
-        'md2' : '500px',
+        'md2' : '1000px',
+        'md3' : '600px',
       }
     },
   },

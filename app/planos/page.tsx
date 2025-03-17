@@ -44,7 +44,7 @@ export default function Home() {
       <div className={`relative w-full min-h-screen flex ${theme === "dark" ? "bg-[#171717] text-white bg-overlay" : "bg-white text-black"}`}>
         <Navbar />
 
-        <div className="ml-[72px] md:ml-[22%] w-full">
+        <div className="ml-0 md3:ml-[72px] md:ml-[18%] w-full">
           <div className="w-full flex flex-col items-center text-center px-6 md:px-8 xl:px-16">
             <h1 className={`text-3xl mt-16 ${theme === "dark" ? "text-[#FFF]" : "text-[#6C6C6C]"}`}>
               Eleve a sua gestão e vendas com a

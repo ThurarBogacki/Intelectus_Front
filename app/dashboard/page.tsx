@@ -44,7 +44,7 @@ export default function Home() {
         <>
             <div className={`relative w-full min-h-screen flex ${theme === "dark" ? "bg-[#171717] text-white bg-overlay" : "bg-white text-black"}`}>
                 <Navbar />
-                <div className="ml-[72px] md:ml-[22%] p-5">
+                <div className="ml-0 md3:ml-[72px] md:ml-[18%] p-5">
                 <div className="flex flex-col flex-1 px-6 md:px-8 xl:px-16">
                     <h1 className="text-3xl font-bold mb-4 mt-16">
                         {loading ? "Carregando..." : error ? error : `Boas vindas, ${user}`}

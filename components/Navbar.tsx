@@ -1,16 +1,19 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
-  const pathname = usePathname(); // Obtém a rota atual
+  const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false); // Estado do menu no mobile
 
   return (
-    <div className="min-h-screen max-h-screen fixed bg-[#1F1F1F] w-[72px] md:w-[22%] transition-all duration-300 flex flex-col items-center">
+<div className={`hidden md3:flex fixed left-0 top-0 h-screen bg-[#1F1F1F] transition-all duration-300  flex-col items-center z-50
+  ${isOpen ? "w-[250px]" : "w-[72px] md2:w-[18%]"}`}>
+
       {/* Logo */}
-      <div className="w-full h-[80px] items-center justify-center md:flex hidden p-5">
+      <div className="w-full h-[80px] items-center justify-center md2:flex hidden p-5 mt-[20px]">
         <Image 
           alt="logo" 
           width={200} 
@@ -19,15 +22,27 @@ export default function Navbar() {
           className="object-contain"
         />
       </div>
-      <button className="text-white mt-[20px] mb-[20px] md:hidden "><Image className="w-6 h-6 md:w-8 md:h-8 object-contain" src="/images/MenuIcons/menu.png" alt="MenuIcon" width={30} height={30}></Image></button>
+
+  <button 
+    onClick={() => setIsOpen(!isOpen)} 
+    className={`text-white mt-[20px] mb-[20px] md2:hidden transition-all ${isOpen ? "self-end mr-[20px]" : ""}`}
+  >
+    <Image 
+      className="w-6 h-6 md2:w-8 md2:h-8 object-contain" 
+      src="/images/MenuIcons/menu.png" 
+      alt="MenuIcon" 
+      width={30} 
+      height={30} 
+    />
+  </button>
 
       {/* Menu */}
-      <div className="w-full mt-[40px] md:ml-[15%] ml-0 flex flex-col text-[#B2B2B2]">
+      <div className={`w-full  md2:ml-[15%] ml-0 flex flex-col text-[#B2B2B2] ${isOpen ? "mt-[20px]" : "mt-[25px] mt2:mt-[0px]"}`}>
         {[
           { src: "/images/MenuIcons/dashboard.png", label: "Dashboard", href: "/dashboard" },
-          { src: "/images/MenuIcons/planos.png", label: "Planos", href: "/planos" },
+          { src: "/images/MenuIcons/planos.png", label: "Planos Afiliados", href: "/planos" },
           { src: "/images/MenuIcons/marketplace.png", label: "Marketplace", href: "/marketplace" },
-          { src: "/images/MenuIcons/network.png", label: "Marketing", href: "/network" },
+          { src: "/images/MenuIcons/network.png", label: "Marketing de Rede", href: "/network" },
           { src: "/images/MenuIcons/shoppingBag.png", label: "Compras", href: "/compras" },
           { src: "/images/MenuIcons/financas.png", label: "Finanças", href: "/financas" },
         ].map((item, index) => {
@@ -36,17 +51,17 @@ export default function Navbar() {
           return (
             <Link key={index} href={item.href} className="w-full">
               <div
-                className={`flex md:items-start md:justify-normal items-center text-center justify-center gap-3 p-2 md:p-3 w-full cursor-pointer transition-all duration-300 
-                  ${isActive ? " text-[#00FFF3]" : "text-[#B2B2B2]"}`}
+                className={`flex  gap-3 p-2 md2:p-3 w-full cursor-pointer transition-all duration-300 
+                  ${isActive ? "text-[#00FFF3]" : "text-[#B2B2B2]"} ${isOpen ? "items-start justify-normal ml-[20px] p-3" : "md2:items-start md2:justify-normal items-center text-center justify-center"}`}
               >
                 <Image 
                   alt="icon" 
                   width={30} 
                   height={30} 
                   src={item.src}
-                  className="w-6 h-6 md:w-8 md:h-8 object-contain"
+                  className="w-6 h-6 md2:w-8 md2:h-8 object-contain"
                 />
-                <p className={`text-[14px] md:text-[16px] md:block hidden`}>
+                <p className={`text-[16px] md2:block ${isOpen ? "block" : "hidden"}`}>
                   {item.label}
                 </p>
               </div>
@@ -55,7 +70,7 @@ export default function Navbar() {
         })}
 
         {/* Separador "Outros" */}
-        <p className="md:text-[12px] text-[8px] flex md:items-start md:justify-normal  items-center justify-center text-[#686868] mt-[60px] md:mt-10 px-3 md:block">
+        <p className={`md2:text-[12px] text-[8px] flex  text-[#686868] mt-[20px] md2:mt-10 px-3 md2:block ${isOpen ? "ml-[20px] block items-start justify-normal" : " md2:items-start md2:justify-normal items-center justify-center"}`}>
           Outros
         </p>
 
@@ -68,17 +83,17 @@ export default function Navbar() {
           return (
             <Link key={index} href={item.href} className="w-full">
               <div
-                className={`flex items-center justify-center md:items-start md:justify-normal gap-3 p-3 w-full cursor-pointer transition-all duration-300 
-                  ${isActive ? "bg-[#2A2A2A] border-l-4 border-[#00FFF3] text-[#00FFF3]" : "text-[#B2B2B2]"}`}
+                className={`flex  gap-3 p-3 w-full cursor-pointer transition-all duration-300 
+                  ${isActive ? "bg-[#2A2A2A] border-l-4 border-[#00FFF3] text-[#00FFF3]" : "text-[#B2B2B2]"} ${isOpen ? "items-start justify-normal ml-[20px]" : "md2:items-start md2:justify-normal items-center text-center justify-center"}`}
               >
                 <Image 
                   alt="icon" 
                   width={28} 
                   height={28} 
                   src={item.src}
-                  className="w-6 h-6 md:w-7 md:h-7 object-contain"
+                  className="w-6 h-6 md2:w-7 md2:h-7 object-contain"
                 />
-                <p className={`text-[14px] md:block hidden`}>
+                <p className={`text-[14px] md2:block ${isOpen ? "block" : "hidden"}`}>
                   {item.label}
                 </p>
               </div>

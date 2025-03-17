@@ -31,12 +31,17 @@ export default function Course({ title, curr_module, image, content, link}: Cour
           className="relative w-[180px] h-[360px] lg:w-[240px] lg:h-[420px] rounded-lg overflow-hidden bg-cover bg-center flex items-center justify-center"
           style={{ backgroundImage: `url(${image})` }}
         >
+          <div className="absolute inset-0 bg-black/40"></div> 
+          
           <div className="relative z-10 text-center text-[#FFF]">
-            <h2 className="text-base font-bold mb-8">{ title }</h2>
-            <CourseButton height={23} width={90} onClick={() => console.log({ link })}>{ curr_module }</CourseButton>
+            <h2 className="text-base font-bold mb-8">{title}</h2>
+            <CourseButton height={23} width={90} onClick={() => console.log({ link })}>
+              {curr_module}
+            </CourseButton>
           </div>
         </div>
       )}
+
     </>
   )
 }

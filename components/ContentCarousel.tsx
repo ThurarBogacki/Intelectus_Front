@@ -16,7 +16,6 @@ interface ContentCarouselProps {
 
 export default function ContentCarousel({ courses }: ContentCarouselProps) {
   const { theme } = useTheme();
-
   const swiperRef = useRef<any>(null);
 
   useEffect(() => {
@@ -34,8 +33,9 @@ export default function ContentCarousel({ courses }: ContentCarouselProps) {
       </div>
 
       <div className="relative w-full overflow-hidden">
+        {/* Slider */}
         <Swiper
-        ref={swiperRef}
+          ref={swiperRef}
           modules={[Navigation]}
           spaceBetween={24}
           slidesPerView={1.2}
@@ -60,17 +60,15 @@ export default function ContentCarousel({ courses }: ContentCarouselProps) {
           ))}
         </Swiper>
 
+        <div className="absolute top-0 right-0 flex space-x-2 p-2 z-10">
+          <button className="custom-prev-2">
+            <Image src={arrow} alt="Scroll left" className="rotate-180 w-6 h-6" />
+          </button>
+          <button className="custom-next-2">
+            <Image src={arrow} alt="Scroll right" className="w-6 h-6" />
+          </button>
+        </div>
       </div>
-
-      <div className="fixed right-4 md:right-8 top-[340px] transform -translate-y-1/2 space-x-4 grid grid-cols-2">
-        <button className="col-span-1 custom-prev-2">
-          <Image src={arrow} alt="Scroll left" className='rotate-180 w-5 h-5' />
-        </button>
-        <button className="col-span-1 custom-next-2">
-          <Image src={arrow} alt="Scroll right" className='w-5 h-5' />
-        </button>
-      </div>
-
     </div>
   );
 }
