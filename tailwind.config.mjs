@@ -18,7 +18,10 @@ export default {
       screens:  {
         'md2' : '1000px',
         'md3' : '600px',
-      }
+      },
+      fontFamily: {
+        sans: "var(--font-poppins), sans-serif",
+      },
     },
   },
   plugins: [],

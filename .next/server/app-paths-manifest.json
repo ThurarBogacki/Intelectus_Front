@@ -1,6 +1,6 @@
 {
-  "/planos/page": "app/planos/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/compras/page": "app/compras/page.js",
-  "/dashboard/page": "app/dashboard/page.js"
+  "/page": "app/page.js",
+  "/auth/login/page": "app/auth/login/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/_not-found/page": "app/_not-found/page.js"
 }
