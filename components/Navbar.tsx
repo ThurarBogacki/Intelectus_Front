@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
 <div className={`hidden md3:flex fixed left-0 top-0 h-screen bg-[#1F1F1F] transition-all duration-300  flex-col items-center z-50
-  ${isOpen ? "w-[250px]" : "w-[72px] md2:w-[18%]"}`}>
+  ${isOpen ? "w-[250px]" : "w-[72px] md2:w-[20%] md2:max-w-[350px]"}`}>
 
       {/* Logo */}
       <div className="w-full h-[80px] items-center justify-center md2:flex hidden p-5 mt-[20px]">
@@ -37,7 +37,7 @@ export default function Navbar() {
   </button>
 
       {/* Menu */}
-      <div className={`w-full  md2:ml-[15%] ml-0 flex flex-col text-[#B2B2B2] ${isOpen ? "mt-[20px]" : "mt-[25px] mt2:mt-[0px]"}`}>
+      <div className={`w-full  md2:ml-[15%] ml-0 flex flex-col text-[#B2B2B2] ${isOpen ? "mt-[20px]" : "mt-[25px] md:mt-[70px] mt2:mt-[0px]"}`}>
         {[
           { src: "/images/MenuIcons/dashboard.png", label: "Dashboard", href: "/dashboard" },
           { src: "/images/MenuIcons/planos.png", label: "Planos Afiliados", href: "/planos" },
@@ -61,7 +61,7 @@ export default function Navbar() {
                   src={item.src}
                   className="w-6 h-6 md2:w-8 md2:h-8 object-contain"
                 />
-                <p className={`text-[16px] md2:block ${isOpen ? "block" : "hidden"}`}>
+                <p className={`text-[18px] md2:block ${isOpen ? "block" : "hidden"}`}>
                   {item.label}
                 </p>
               </div>

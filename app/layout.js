@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/images/logopreta.png" sizes="any" />
+        <link rel="icon" href="/images/PlanIcons/shape-premium.svg" sizes="any" />
         <link
           rel="stylesheet"
           href="https://cdn-uicons.flaticon.com/uicons-regular-solid/css/uicons-regular-solid.css"

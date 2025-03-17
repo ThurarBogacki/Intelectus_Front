@@ -34,7 +34,7 @@ export default function Home() {
       <div className={`relative w-full min-h-screen flex overflow-hidden ${theme === "dark" ? "bg-[#171717] text-[#D9D9D9] bg-overlay" : "bg-white text-[#6C6C6C]"}`}>
         <Navbar />
 
-        <div className="ml-[30px] md3:ml-[90px] md:ml-[22%] w-[calc(100vw-72px)] lg:w-[calc(100vw-22%)]">
+        <div className="ml-[30px] md3:ml-[90px] md2:ml-[20%] w-[calc(100vw-150px)] lg:w-[calc(100vw-22%)]">
 
           <div className="sm:mx-4 md:mx-8 lg:mx-16">
             <CourseCarousel courses={courses} />
@@ -44,7 +44,7 @@ export default function Home() {
             <ContentCarousel courses={content} />
           </div>
 
-          <div className="flex flex-col flex-1 px-6 md:px-8 xl:px-16">
+          <div className="flex flex-col flex-1 px-6 md:px-8 xl:px-16 max-w-[94%]">
             <div className="relative grid grid-cols-1 xl:grid-cols-4 gap-4 w-full mt-12 mb-16">
               <ContentBox title="Conteúdo">Lorem ipsum dolor sit amet</ContentBox>
               <ContentBox title="Conteúdo">Lorem ipsum dolor sit amet</ContentBox>

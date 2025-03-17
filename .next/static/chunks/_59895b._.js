@@ -26,7 +26,7 @@ function Navbar() {
     const [isOpen, setIsOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false); // Estado do menu no mobile
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: `hidden md3:flex fixed left-0 top-0 h-screen bg-[#1F1F1F] transition-all duration-300  flex-col items-center z-50
-  ${isOpen ? "w-[250px]" : "w-[72px] md2:w-[18%]"}`,
+  ${isOpen ? "w-[250px]" : "w-[72px] md2:w-[20%] md2:max-w-[350px]"}`,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "w-full h-[80px] items-center justify-center md2:flex hidden p-5 mt-[20px]",
@@ -66,7 +66,7 @@ function Navbar() {
                 columnNumber: 3
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: `w-full  md2:ml-[15%] ml-0 flex flex-col text-[#B2B2B2] ${isOpen ? "mt-[20px]" : "mt-[25px] mt2:mt-[0px]"}`,
+                className: `w-full  md2:ml-[15%] ml-0 flex flex-col text-[#B2B2B2] ${isOpen ? "mt-[20px]" : "mt-[25px] md:mt-[70px] mt2:mt-[0px]"}`,
                 children: [
                     [
                         {
@@ -120,7 +120,7 @@ function Navbar() {
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: `text-[16px] md2:block ${isOpen ? "block" : "hidden"}`,
+                                        className: `text-[18px] md2:block ${isOpen ? "block" : "hidden"}`,
                                         children: item.label
                                     }, void 0, false, {
                                         fileName: "[project]/components/Navbar.tsx",
@@ -955,7 +955,7 @@ function Home() {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "ml-[30px] md3:ml-[90px] md:ml-[22%] w-[calc(100vw-72px)] lg:w-[calc(100vw-22%)]",
+                    className: "ml-[30px] md3:ml-[90px] md2:ml-[20%] w-[calc(100vw-150px)] lg:w-[calc(100vw-22%)]",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "sm:mx-4 md:mx-8 lg:mx-16",
@@ -986,7 +986,7 @@ function Home() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex flex-col flex-1 px-6 md:px-8 xl:px-16",
+                            className: "flex flex-col flex-1 px-6 md:px-8 xl:px-16 max-w-[94%]",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "relative grid grid-cols-1 xl:grid-cols-4 gap-4 w-full mt-12 mb-16",
                                 children: [

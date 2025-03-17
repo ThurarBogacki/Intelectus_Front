@@ -26,7 +26,7 @@ function Navbar() {
     const [isOpen, setIsOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false); // Estado do menu no mobile
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: `hidden md3:flex fixed left-0 top-0 h-screen bg-[#1F1F1F] transition-all duration-300  flex-col items-center z-50
-  ${isOpen ? "w-[250px]" : "w-[72px] md2:w-[18%]"}`,
+  ${isOpen ? "w-[250px]" : "w-[72px] md2:w-[20%] md2:max-w-[350px]"}`,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "w-full h-[80px] items-center justify-center md2:flex hidden p-5 mt-[20px]",
@@ -66,7 +66,7 @@ function Navbar() {
                 columnNumber: 3
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: `w-full  md2:ml-[15%] ml-0 flex flex-col text-[#B2B2B2] ${isOpen ? "mt-[20px]" : "mt-[25px] mt2:mt-[0px]"}`,
+                className: `w-full  md2:ml-[15%] ml-0 flex flex-col text-[#B2B2B2] ${isOpen ? "mt-[20px]" : "mt-[25px] md:mt-[70px] mt2:mt-[0px]"}`,
                 children: [
                     [
                         {
@@ -120,7 +120,7 @@ function Navbar() {
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: `text-[16px] md2:block ${isOpen ? "block" : "hidden"}`,
+                                        className: `text-[18px] md2:block ${isOpen ? "block" : "hidden"}`,
                                         children: item.label
                                     }, void 0, false, {
                                         fileName: "[project]/components/Navbar.tsx",
@@ -753,10 +753,26 @@ const treeData = {
             name: "/images/PlanIcons/shape-partner.svg",
             children: [
                 {
-                    name: "/images/PlanIcons/shape-standard.svg"
+                    name: "/images/PlanIcons/shape-standard.svg",
+                    children: [
+                        {
+                            name: "/images/PlanIcons/shape-standard.svg"
+                        },
+                        {
+                            name: "/images/PlanIcons/shape-premium.svg"
+                        }
+                    ]
                 },
                 {
-                    name: "/images/PlanIcons/shape-premium.svg"
+                    name: "/images/PlanIcons/shape-premium.svg",
+                    children: [
+                        {
+                            name: "/images/PlanIcons/shape-premium.svg"
+                        },
+                        {
+                            name: "/images/PlanIcons/shape-standard.svg"
+                        }
+                    ]
                 }
             ]
         },
@@ -764,10 +780,26 @@ const treeData = {
             name: "/images/PlanIcons/shape-standard.svg",
             children: [
                 {
-                    name: "/images/PlanIcons/shape-standard.svg"
+                    name: "/images/PlanIcons/shape-standard.svg",
+                    children: [
+                        {
+                            name: "/images/PlanIcons/shape-partner.svg"
+                        },
+                        {
+                            name: "/images/PlanIcons/shape-premium.svg"
+                        }
+                    ]
                 },
                 {
-                    name: "/images/PlanIcons/shape-premium.svg"
+                    name: "/images/PlanIcons/shape-premium.svg",
+                    children: [
+                        {
+                            name: "/images/PlanIcons/shape-standard.svg"
+                        },
+                        {
+                            name: "/images/PlanIcons/shape-partner.svg"
+                        }
+                    ]
                 }
             ]
         }
@@ -782,7 +814,7 @@ function Home() {
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Navbar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/app/planos/page.tsx",
-                    lineNumber: 45,
+                    lineNumber: 70,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -800,13 +832,13 @@ function Home() {
                                             children: " NFT Intelectus."
                                         }, void 0, false, {
                                             fileName: "[project]/app/planos/page.tsx",
-                                            lineNumber: 51,
+                                            lineNumber: 76,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/planos/page.tsx",
-                                    lineNumber: 49,
+                                    lineNumber: 74,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -814,7 +846,7 @@ function Home() {
                                     children: "A solução que conecta inovação, análise estratégica e rentabilidade para otimizar seus ativos."
                                 }, void 0, false, {
                                     fileName: "[project]/app/planos/page.tsx",
-                                    lineNumber: 54,
+                                    lineNumber: 79,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$plan$2d$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -830,24 +862,24 @@ function Home() {
                                                 children: "Free"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/planos/page.tsx",
-                                                lineNumber: 59,
+                                                lineNumber: 84,
                                                 columnNumber: 49
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/planos/page.tsx",
-                                        lineNumber: 59,
+                                        lineNumber: 84,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/planos/page.tsx",
-                                    lineNumber: 58,
+                                    lineNumber: 83,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/planos/page.tsx",
-                            lineNumber: 48,
+                            lineNumber: 73,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -865,7 +897,7 @@ function Home() {
                                                     alt: "Moeda do plano Free"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/planos/page.tsx",
-                                                    lineNumber: 68,
+                                                    lineNumber: 93,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -876,13 +908,13 @@ function Home() {
                                                             children: "Free"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/planos/page.tsx",
-                                                            lineNumber: 69,
+                                                            lineNumber: 94,
                                                             columnNumber: 26
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/planos/page.tsx",
-                                                    lineNumber: 69,
+                                                    lineNumber: 94,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -890,7 +922,7 @@ function Home() {
                                                     children: "Torne-se um afiliado e ganhe comissões por cada produto vendido."
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/planos/page.tsx",
-                                                    lineNumber: 70,
+                                                    lineNumber: 95,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -898,23 +930,23 @@ function Home() {
                                                     children: "Ativo"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/planos/page.tsx",
-                                                    lineNumber: 71,
+                                                    lineNumber: 96,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/planos/page.tsx",
-                                            lineNumber: 67,
+                                            lineNumber: 92,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/planos/page.tsx",
-                                        lineNumber: 66,
+                                        lineNumber: 91,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/planos/page.tsx",
-                                    lineNumber: 65,
+                                    lineNumber: 90,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -929,7 +961,7 @@ function Home() {
                                                     alt: "Moeda do plano Partner"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/planos/page.tsx",
-                                                    lineNumber: 79,
+                                                    lineNumber: 104,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -940,13 +972,13 @@ function Home() {
                                                             children: "Partner"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/planos/page.tsx",
-                                                            lineNumber: 80,
+                                                            lineNumber: 105,
                                                             columnNumber: 26
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/planos/page.tsx",
-                                                    lineNumber: 80,
+                                                    lineNumber: 105,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -958,13 +990,13 @@ function Home() {
                                                             children: "20"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/planos/page.tsx",
-                                                            lineNumber: 83,
+                                                            lineNumber: 108,
                                                             columnNumber: 22
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/planos/page.tsx",
-                                                    lineNumber: 82,
+                                                    lineNumber: 107,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -979,7 +1011,7 @@ function Home() {
                                                                     alt: "Positive"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/planos/page.tsx",
-                                                                    lineNumber: 88,
+                                                                    lineNumber: 113,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -987,13 +1019,13 @@ function Home() {
                                                                     children: "Recebe um ebook da Intelectus como bônus."
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/planos/page.tsx",
-                                                                    lineNumber: 89,
+                                                                    lineNumber: 114,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/planos/page.tsx",
-                                                            lineNumber: 87,
+                                                            lineNumber: 112,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1005,7 +1037,7 @@ function Home() {
                                                                     alt: "Positive"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/planos/page.tsx",
-                                                                    lineNumber: 92,
+                                                                    lineNumber: 117,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1013,13 +1045,13 @@ function Home() {
                                                                     children: "Garante posição no sistema binário."
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/planos/page.tsx",
-                                                                    lineNumber: 93,
+                                                                    lineNumber: 118,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/planos/page.tsx",
-                                                            lineNumber: 91,
+                                                            lineNumber: 116,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1031,7 +1063,7 @@ function Home() {
                                                                     alt: "Negative"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/planos/page.tsx",
-                                                                    lineNumber: 97,
+                                                                    lineNumber: 122,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1039,13 +1071,13 @@ function Home() {
                                                                     children: "Não recebe comissão de rede."
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/planos/page.tsx",
-                                                                    lineNumber: 98,
+                                                                    lineNumber: 123,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/planos/page.tsx",
-                                                            lineNumber: 96,
+                                                            lineNumber: 121,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1057,7 +1089,7 @@ function Home() {
                                                                     alt: "Negative"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/planos/page.tsx",
-                                                                    lineNumber: 101,
+                                                                    lineNumber: 126,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1065,19 +1097,19 @@ function Home() {
                                                                     children: "Não é obrigado a divulgar nenhum produto diariamente."
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/planos/page.tsx",
-                                                                    lineNumber: 102,
+                                                                    lineNumber: 127,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/planos/page.tsx",
-                                                            lineNumber: 100,
+                                                            lineNumber: 125,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/planos/page.tsx",
-                                                    lineNumber: 86,
+                                                    lineNumber: 111,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1091,33 +1123,33 @@ function Home() {
                                                             children: "Comprar"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/planos/page.tsx",
-                                                            lineNumber: 108,
+                                                            lineNumber: 133,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/planos/page.tsx",
-                                                        lineNumber: 107,
+                                                        lineNumber: 132,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/planos/page.tsx",
-                                                    lineNumber: 106,
+                                                    lineNumber: 131,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/planos/page.tsx",
-                                            lineNumber: 78,
+                                            lineNumber: 103,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/planos/page.tsx",
-                                        lineNumber: 77,
+                                        lineNumber: 102,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/planos/page.tsx",
-                                    lineNumber: 76,
+                                    lineNumber: 101,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1132,7 +1164,7 @@ function Home() {
                                                     alt: "Moeda do plano Partner"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/planos/page.tsx",
-                                                    lineNumber: 119,
+                                                    lineNumber: 144,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1143,13 +1175,13 @@ function Home() {
                                                             children: "Standard"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/planos/page.tsx",
-                                                            lineNumber: 120,
+                                                            lineNumber: 145,
                                                             columnNumber: 26
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/planos/page.tsx",
-                                                    lineNumber: 120,
+                                                    lineNumber: 145,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1161,13 +1193,13 @@ function Home() {
                                                             children: "120"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/planos/page.tsx",
-                                                            lineNumber: 123,
+                                                            lineNumber: 148,
                                                             columnNumber: 22
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/planos/page.tsx",
-                                                    lineNumber: 122,
+                                                    lineNumber: 147,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1182,7 +1214,7 @@ function Home() {
                                                                     alt: "Positive"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/planos/page.tsx",
-                                                                    lineNumber: 128,
+                                                                    lineNumber: 153,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1190,13 +1222,13 @@ function Home() {
                                                                     children: "Recebe comissões de rede (participa da estrutura de bonificações)."
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/planos/page.tsx",
-                                                                    lineNumber: 129,
+                                                                    lineNumber: 154,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/planos/page.tsx",
-                                                            lineNumber: 127,
+                                                            lineNumber: 152,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1208,7 +1240,7 @@ function Home() {
                                                                     alt: "Positive"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/planos/page.tsx",
-                                                                    lineNumber: 132,
+                                                                    lineNumber: 157,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1219,20 +1251,20 @@ function Home() {
                                                                             children: "Obrigação"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/planos/page.tsx",
-                                                                            lineNumber: 133,
+                                                                            lineNumber: 158,
                                                                             columnNumber: 67
                                                                         }, this),
                                                                         " de postar 1x ao dia o link de afiliado de produtos selecionados pela Intelectus."
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/planos/page.tsx",
-                                                                    lineNumber: 133,
+                                                                    lineNumber: 158,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/planos/page.tsx",
-                                                            lineNumber: 131,
+                                                            lineNumber: 156,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1244,7 +1276,7 @@ function Home() {
                                                                     alt: "Positive"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/planos/page.tsx",
-                                                                    lineNumber: 136,
+                                                                    lineNumber: 161,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1255,7 +1287,7 @@ function Home() {
                                                                             children: "Garantia semanal"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/planos/page.tsx",
-                                                                            lineNumber: 137,
+                                                                            lineNumber: 162,
                                                                             columnNumber: 67
                                                                         }, this),
                                                                         " de ",
@@ -1264,26 +1296,26 @@ function Home() {
                                                                             children: "$7,50"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/planos/page.tsx",
-                                                                            lineNumber: 137,
+                                                                            lineNumber: 162,
                                                                             columnNumber: 122
                                                                         }, this),
                                                                         " em INTEL via recompra programada, caso a comissão de vendas não atinja esse valor mínimo."
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/planos/page.tsx",
-                                                                    lineNumber: 137,
+                                                                    lineNumber: 162,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/planos/page.tsx",
-                                                            lineNumber: 135,
+                                                            lineNumber: 160,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/planos/page.tsx",
-                                                    lineNumber: 126,
+                                                    lineNumber: 151,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1297,33 +1329,33 @@ function Home() {
                                                             children: "Comprar"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/planos/page.tsx",
-                                                            lineNumber: 145,
+                                                            lineNumber: 170,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/planos/page.tsx",
-                                                        lineNumber: 144,
+                                                        lineNumber: 169,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/planos/page.tsx",
-                                                    lineNumber: 143,
+                                                    lineNumber: 168,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/planos/page.tsx",
-                                            lineNumber: 118,
+                                            lineNumber: 143,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/planos/page.tsx",
-                                        lineNumber: 117,
+                                        lineNumber: 142,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/planos/page.tsx",
-                                    lineNumber: 116,
+                                    lineNumber: 141,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1338,7 +1370,7 @@ function Home() {
                                                     alt: "Moeda do plano Partner"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/planos/page.tsx",
-                                                    lineNumber: 156,
+                                                    lineNumber: 181,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1349,13 +1381,13 @@ function Home() {
                                                             children: "Premium"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/planos/page.tsx",
-                                                            lineNumber: 157,
+                                                            lineNumber: 182,
                                                             columnNumber: 26
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/planos/page.tsx",
-                                                    lineNumber: 157,
+                                                    lineNumber: 182,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1367,13 +1399,13 @@ function Home() {
                                                             children: "600"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/planos/page.tsx",
-                                                            lineNumber: 160,
+                                                            lineNumber: 185,
                                                             columnNumber: 22
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/planos/page.tsx",
-                                                    lineNumber: 159,
+                                                    lineNumber: 184,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1388,7 +1420,7 @@ function Home() {
                                                                     alt: "Positive"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/planos/page.tsx",
-                                                                    lineNumber: 165,
+                                                                    lineNumber: 190,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1396,13 +1428,13 @@ function Home() {
                                                                     children: "Recebe comissões de rede (participa da estrutura de bonificações)."
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/planos/page.tsx",
-                                                                    lineNumber: 166,
+                                                                    lineNumber: 191,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/planos/page.tsx",
-                                                            lineNumber: 164,
+                                                            lineNumber: 189,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1414,7 +1446,7 @@ function Home() {
                                                                     alt: "Positive"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/planos/page.tsx",
-                                                                    lineNumber: 169,
+                                                                    lineNumber: 194,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1425,20 +1457,20 @@ function Home() {
                                                                             children: "Obrigação"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/planos/page.tsx",
-                                                                            lineNumber: 170,
+                                                                            lineNumber: 195,
                                                                             columnNumber: 67
                                                                         }, this),
                                                                         " de postar 1x ao dia o link de afiliado de produtos selecionados pela Intelectus."
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/planos/page.tsx",
-                                                                    lineNumber: 170,
+                                                                    lineNumber: 195,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/planos/page.tsx",
-                                                            lineNumber: 168,
+                                                            lineNumber: 193,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1450,7 +1482,7 @@ function Home() {
                                                                     alt: "Positive"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/planos/page.tsx",
-                                                                    lineNumber: 173,
+                                                                    lineNumber: 198,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1461,7 +1493,7 @@ function Home() {
                                                                             children: "Garantia semanal"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/planos/page.tsx",
-                                                                            lineNumber: 174,
+                                                                            lineNumber: 199,
                                                                             columnNumber: 67
                                                                         }, this),
                                                                         " de ",
@@ -1470,26 +1502,26 @@ function Home() {
                                                                             children: "$37,50"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/planos/page.tsx",
-                                                                            lineNumber: 174,
+                                                                            lineNumber: 199,
                                                                             columnNumber: 122
                                                                         }, this),
                                                                         " em INTEL via recompra programada, caso a comissão de vendas não atinja esse valor mínimo."
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/planos/page.tsx",
-                                                                    lineNumber: 174,
+                                                                    lineNumber: 199,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/planos/page.tsx",
-                                                            lineNumber: 172,
+                                                            lineNumber: 197,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/planos/page.tsx",
-                                                    lineNumber: 163,
+                                                    lineNumber: 188,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1503,39 +1535,39 @@ function Home() {
                                                             children: "Comprar"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/planos/page.tsx",
-                                                            lineNumber: 182,
+                                                            lineNumber: 207,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/planos/page.tsx",
-                                                        lineNumber: 181,
+                                                        lineNumber: 206,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/planos/page.tsx",
-                                                    lineNumber: 180,
+                                                    lineNumber: 205,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/planos/page.tsx",
-                                            lineNumber: 155,
+                                            lineNumber: 180,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/planos/page.tsx",
-                                        lineNumber: 154,
+                                        lineNumber: 179,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/planos/page.tsx",
-                                    lineNumber: 153,
+                                    lineNumber: 178,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/planos/page.tsx",
-                            lineNumber: 64,
+                            lineNumber: 89,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1548,19 +1580,19 @@ function Home() {
                                         children: "Observação: "
                                     }, void 0, false, {
                                         fileName: "[project]/app/planos/page.tsx",
-                                        lineNumber: 194,
+                                        lineNumber: 219,
                                         columnNumber: 15
                                     }, this),
                                     " A obrigatoriedade de postagem diária se aplica apenas aos assinantes Standard e Premium. Caso o afiliado Standard ou Premium ou não poste o link de afiliado do produto selecionado pela Intelectus no dia ficará sujeito à perda de parte ou de todos os seus benefícios."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/planos/page.tsx",
-                                lineNumber: 193,
+                                lineNumber: 218,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/planos/page.tsx",
-                            lineNumber: 192,
+                            lineNumber: 217,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1575,13 +1607,13 @@ function Home() {
                                             children: "MULTINÍVEL"
                                         }, void 0, false, {
                                             fileName: "[project]/app/planos/page.tsx",
-                                            lineNumber: 201,
+                                            lineNumber: 226,
                                             columnNumber: 27
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/planos/page.tsx",
-                                    lineNumber: 200,
+                                    lineNumber: 225,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1589,13 +1621,13 @@ function Home() {
                                     children: "Bonificação que se acumulam conforme a rede cresce e as vendas acontecem:"
                                 }, void 0, false, {
                                     fileName: "[project]/app/planos/page.tsx",
-                                    lineNumber: 203,
+                                    lineNumber: 228,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/planos/page.tsx",
-                            lineNumber: 199,
+                            lineNumber: 224,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1605,12 +1637,12 @@ function Home() {
                                     className: "w-full lg:w-1/4 flex justify-center",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$User$2d$box$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                         fileName: "[project]/app/planos/page.tsx",
-                                        lineNumber: 211,
+                                        lineNumber: 236,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/planos/page.tsx",
-                                    lineNumber: 210,
+                                    lineNumber: 235,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1619,18 +1651,18 @@ function Home() {
                                         treeData: treeData
                                     }, void 0, false, {
                                         fileName: "[project]/app/planos/page.tsx",
-                                        lineNumber: 215,
+                                        lineNumber: 240,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/planos/page.tsx",
-                                    lineNumber: 214,
+                                    lineNumber: 239,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/planos/page.tsx",
-                            lineNumber: 208,
+                            lineNumber: 233,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1641,31 +1673,31 @@ function Home() {
                                 size: 24
                             }, void 0, false, {
                                 fileName: "[project]/app/planos/page.tsx",
-                                lineNumber: 224,
+                                lineNumber: 249,
                                 columnNumber: 35
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$bs$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["BsSun"], {
                                 className: "text-[#888888]",
                                 size: 24
                             }, void 0, false, {
                                 fileName: "[project]/app/planos/page.tsx",
-                                lineNumber: 224,
+                                lineNumber: 249,
                                 columnNumber: 87
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/planos/page.tsx",
-                            lineNumber: 220,
+                            lineNumber: 245,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/planos/page.tsx",
-                    lineNumber: 47,
+                    lineNumber: 72,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/planos/page.tsx",
-            lineNumber: 44,
+            lineNumber: 69,
             columnNumber: 7
         }, this)
     }, void 0, false);

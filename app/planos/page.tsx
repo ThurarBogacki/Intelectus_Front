@@ -22,19 +22,44 @@ const treeData = {
     {
       name: "/images/PlanIcons/shape-partner.svg",
       children: [
-        { name: "/images/PlanIcons/shape-standard.svg" },
-        { name: "/images/PlanIcons/shape-premium.svg" },
-      ],
+        {
+          name: "/images/PlanIcons/shape-standard.svg",
+          children: [
+            { name: "/images/PlanIcons/shape-standard.svg" },
+            { name: "/images/PlanIcons/shape-premium.svg" }
+          ]
+        },
+        {
+          name: "/images/PlanIcons/shape-premium.svg",
+          children: [
+            { name: "/images/PlanIcons/shape-premium.svg" },
+            { name: "/images/PlanIcons/shape-standard.svg" }
+          ]
+        }
+      ]
     },
     {
       name: "/images/PlanIcons/shape-standard.svg",
       children: [
-        { name: "/images/PlanIcons/shape-standard.svg" },
-        { name: "/images/PlanIcons/shape-premium.svg" },
-      ],
-    },
-  ],
+        {
+          name: "/images/PlanIcons/shape-standard.svg",
+          children: [
+            { name: "/images/PlanIcons/shape-partner.svg" },
+            { name: "/images/PlanIcons/shape-premium.svg" }
+          ]
+        },
+        {
+          name: "/images/PlanIcons/shape-premium.svg",
+          children: [
+            { name: "/images/PlanIcons/shape-standard.svg" },
+            { name: "/images/PlanIcons/shape-partner.svg" }
+          ]
+        }
+      ]
+    }
+  ]
 };
+
 
 export default function Home() {
   const { theme, toggleTheme } = useTheme();
