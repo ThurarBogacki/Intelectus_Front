@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@glidejs/glide':
+        specifier: ^3.7.1
+        version: 3.7.1
+      glide:
+        specifier: ^0.2.0
+        version: 0.2.0
       next:
         specifier: 15.1.7
         version: 15.1.7(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -114,6 +120,9 @@ packages:
   '@eslint/plugin-kit@0.2.7':
     resolution: {integrity: sha512-JubJ5B2pJ4k4yGxaNLdbjrnk9d/iDz6/q8wOilpIowd6PJPgaxCuHBnBszq7Ce2TyMrywm5r4PnKm6V3iiZF+g==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@glidejs/glide@3.7.1':
+    resolution: {integrity: sha512-8he0pZpLSqTesSFYiuWdhBmtdlYSPWxfPUCKtkkiX6ZmT8UdMdmoFPtJaOwLBXv4p2JiGxqbuPdiRGGo2e/htQ==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -1042,6 +1051,9 @@ packages:
   get-tsconfig@4.10.0:
     resolution: {integrity: sha512-kGzZ3LWWQcGIAmg6iWvXn0ei6WDtV26wzHRMwDSzmAbcXrTEXxHy6IehI6/4eT6VRKyMP1eF1VqwrVUmE/LR7A==}
 
+  glide@0.2.0:
+    resolution: {integrity: sha512-Yq4N0+OLVBtQ/gegZAo54p/1ZWWjpNVBQ85Hr2V2JABifFs87vavAjME79Ej2lrOpNGK/WykRMvL1+MpoGYIIw==}
+
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
     engines: {node: '>= 6'}
@@ -1831,6 +1843,10 @@ packages:
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
+  tween.js@0.14.0:
+    resolution: {integrity: sha512-+kOicDWXrDnkVaVF7hSpEXSdskOq2NPdszdY4+DzL7Sy9W0SSqmqYBtoU4PjHhfZjre6gopcl2lXf1Ju4PM6/A==}
+    deprecated: This package has moved to @tweenjs/tween.js. Please update your dependencies.
+
   type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
     engines: {node: '>= 0.8.0'}
@@ -1988,6 +2004,8 @@ snapshots:
     dependencies:
       '@eslint/core': 0.12.0
       levn: 0.4.1
+
+  '@glidejs/glide@3.7.1': {}
 
   '@humanfs/core@0.19.1': {}
 
@@ -3049,6 +3067,10 @@ snapshots:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
+  glide@0.2.0:
+    dependencies:
+      tween.js: 0.14.0
+
   glob-parent@5.1.2:
     dependencies:
       is-glob: 4.0.3
@@ -3927,6 +3949,8 @@ snapshots:
       strip-bom: 3.0.0
 
   tslib@2.8.1: {}
+
+  tween.js@0.14.0: {}
 
   type-check@0.4.0:
     dependencies:

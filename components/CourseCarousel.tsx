@@ -28,12 +28,22 @@ export default function CourseCarousel({ courses }: CourseCarouselProps) {
   }, []);
 
   return (
-    <div className="relative w-full mx-auto overflow-hidden">
+    <div className="relative mx-auto overflow-x-hidden">
       <div className="flex justify-between items-center mt-10 mb-4">
         <h2 className={`text-base ${theme === "dark" ? "text-[#D9D9D9]" : "text-[#6C6C6C]"}`}>Meus cursos em progresso</h2>
+
+        <div className='right-4 md:right-8 space-x-4 grid grid-cols-2'>
+          <button className="col-span-1 custom-prev">
+            <Image src={arrow} alt="Scroll left" className='rotate-180 w-5 h-5' />
+          </button>
+          <button className="col-span-1 custom-next">
+            <Image src={arrow} alt="Scroll right" className='w-5 h-5' />
+          </button>
+        </div>
+
       </div>
 
-      <div className="relative w-full overflow-hidden">
+      <div className="container mx-auto">
         <Swiper
         ref={swiperRef}
           modules={[Navigation]}
@@ -61,15 +71,6 @@ export default function CourseCarousel({ courses }: CourseCarouselProps) {
         </Swiper>
 
       </div>
-      
-        <div className="fixed right-4 md:right-8 top-14 transform -translate-y-1/2 space-x-4 grid grid-cols-2">
-          <button className="col-span-1 custom-prev">
-            <Image src={arrow} alt="Scroll left" className='rotate-180 w-5 h-5' />
-          </button>
-          <button className="col-span-1 custom-next">
-            <Image src={arrow} alt="Scroll right" className='w-5 h-5' />
-          </button>
-        </div>
 
     </div>
   );

@@ -385,10 +385,6 @@ img, video {
   top: 340px;
 }
 
-.top-14 {
-  top: 3.5rem;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -559,10 +555,6 @@ img, video {
   height: 100%;
 }
 
-.h-\[100px\] {
-  height: 100px;
-}
-
 .max-h-screen {
   max-height: 100vh;
 }
@@ -619,6 +611,10 @@ img, video {
   width: 100vw;
 }
 
+.w-\[calc\(100vw-72px\)\] {
+  width: calc(100vw - 72px);
+}
+
 .min-w-\[160px\] {
   min-width: 160px;
 }
@@ -629,6 +625,14 @@ img, video {
 
 .min-w-\[242px\] {
   min-width: 242px;
+}
+
+.min-w-\[2px\] {
+  min-width: 2px;
+}
+
+.min-w-\[220px\] {
+  min-width: 220px;
 }
 
 .max-w-\[240px\] {
@@ -774,6 +778,10 @@ img, video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .rounded-2xl {
@@ -1407,6 +1415,14 @@ body {
     width: 22%;
   }
 
+  .md\:w-\[calc\(100vw-22\%\)\] {
+    width: calc(100vw - 22%);
+  }
+
+  .md\:w-\[calc\(100vw-72px\)\] {
+    width: calc(100vw - 72px);
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1465,6 +1481,10 @@ body {
 
   .lg\:w-\[240px\] {
     width: 240px;
+  }
+
+  .lg\:w-\[calc\(100vw-22\%\)\] {
+    width: calc(100vw - 22%);
   }
 
   .lg\:grid-cols-3 {

@@ -34,7 +34,8 @@ export default function Home() {
       <div className={`relative w-full min-h-screen flex overflow-hidden ${theme === "dark" ? "bg-[#171717] text-[#D9D9D9] bg-overlay" : "bg-white text-[#6C6C6C]"}`}>
         <Navbar />
 
-        <div className="ml-[72px] md:ml-[22%] w-full">
+        <div className="ml-[72px] md:ml-[22%] w-[calc(100vw-72px)] lg:w-[calc(100vw-22%)]">
+
           <div className="sm:mx-4 md:mx-8 lg:mx-16">
             <CourseCarousel courses={courses} />
           </div>
