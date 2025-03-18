@@ -1,3 +1,6 @@
 {
-  "/compras/page": "app/compras/page.js"
+  "/compras/page": "app/compras/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/planos/page": "app/planos/page.js"
 }

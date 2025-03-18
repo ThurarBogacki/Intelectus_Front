@@ -4,8 +4,8 @@ import Navbar from "../../components/Navbar";
 import { useTheme } from "../../context/ThemeContext";
 import { FaRegMoon } from "react-icons/fa";
 import { BsSun } from "react-icons/bs";
-import CourseCarousel from "../../components/CourseCarousel";
-import ContentCarousel from "../../components/ContentCarousel";
+import CourseCarousel from "../../components/Course-carousel";
+import ContentCarousel from "../../components/Content-carousel";
 import { ContentBox } from "../../components/Content-box";
 
 export default function Home() {

@@ -335,7 +335,7 @@ function Course({ title, curr_module, image, content, link }) {
                         }
                     }, void 0, false, {
                         fileName: "[project]/components/Course.tsx",
-                        lineNumber: 21,
+                        lineNumber: 20,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$7_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -346,7 +346,7 @@ function Course({ title, curr_module, image, content, link }) {
                                 children: title
                             }, void 0, false, {
                                 fileName: "[project]/components/Course.tsx",
-                                lineNumber: 26,
+                                lineNumber: 25,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$7_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -358,18 +358,18 @@ function Course({ title, curr_module, image, content, link }) {
                                     children: curr_module
                                 }, void 0, false, {
                                     fileName: "[project]/components/Course.tsx",
-                                    lineNumber: 28,
+                                    lineNumber: 27,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/Course.tsx",
-                                lineNumber: 27,
+                                lineNumber: 26,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Course.tsx",
-                        lineNumber: 25,
+                        lineNumber: 24,
                         columnNumber: 11
                     }, this)
                 ]
@@ -388,7 +388,7 @@ function Course({ title, curr_module, image, content, link }) {
                         className: "absolute inset-0 bg-black/40"
                     }, void 0, false, {
                         fileName: "[project]/components/Course.tsx",
-                        lineNumber: 39,
+                        lineNumber: 38,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$7_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -402,12 +402,12 @@ function Course({ title, curr_module, image, content, link }) {
                                     alt: "play"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Course.tsx",
-                                    lineNumber: 46,
+                                    lineNumber: 45,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/Course.tsx",
-                                lineNumber: 42,
+                                lineNumber: 41,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$7_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -415,7 +415,7 @@ function Course({ title, curr_module, image, content, link }) {
                                 children: title
                             }, void 0, false, {
                                 fileName: "[project]/components/Course.tsx",
-                                lineNumber: 48,
+                                lineNumber: 47,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$7_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -423,19 +423,19 @@ function Course({ title, curr_module, image, content, link }) {
                                 children: curr_module
                             }, void 0, false, {
                                 fileName: "[project]/components/Course.tsx",
-                                lineNumber: 49,
+                                lineNumber: 48,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Course.tsx",
-                        lineNumber: 41,
+                        lineNumber: 40,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Course.tsx",
-                lineNumber: 35,
+                lineNumber: 34,
                 columnNumber: 9
             }, this)
         ]
