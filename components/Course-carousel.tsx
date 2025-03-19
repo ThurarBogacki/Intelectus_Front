@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import Course from './Course';
 import Image from 'next/image';
-import arrow from '../public/images/ComprasIcons/arrow.svg';
+import arrow from '../public/images/arrow.svg';
 import { useTheme } from '../context/ThemeContext';
 import { useEffect, useRef } from 'react';
 
@@ -50,7 +50,7 @@ export default function CourseCarousel({ courses }: CourseCarouselProps) {
           spaceBetween={24}
           slidesPerView={1.2}
           breakpoints={{
-            640: { slidesPerView: 2 },
+            640: { slidesPerView: 1 },
             768: { slidesPerView: 3 },
             1024: { slidesPerView: 4 },
           }}

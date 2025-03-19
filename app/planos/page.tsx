@@ -221,7 +221,7 @@ export default function Home() {
             </p>
           </div>
           
-          <div className={`w-full flex flex-col items-center text-center px-6 md:px-8 xl:px-16 ${theme === "dark" ? "bg-[#232323]" : "bg-[#E6E6E6]"}`}>
+          <div className={`relative w-full flex flex-col items-center text-center px-6 md:px-8 xl:px-16 ${theme === "dark" ? "bg-[#232323]" : "bg-[#E6E6E6]"}`}>
             <h1 className={`text-3xl mt-16 mb-6 ${theme === "dark" ? "text-[#FFF]" : "text-[#000]"}`}>
               BONIFICAÇÃO <span className="text-[#00CDD3]">MULTINÍVEL</span>
             </h1>
@@ -230,7 +230,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className={`w-full flex flex-col lg:flex-row items-center lg:items-start px-6 md:px-8 xl:px-16 ${theme === "dark" ? "bg-[#232323]" : "bg-[#E6E6E6]"}`}>
+          <div className={`relative w-full flex flex-col lg:flex-row items-center lg:items-start px-6 md:px-8 xl:px-16 ${theme === "dark" ? "bg-[#232323]" : "bg-[#E6E6E6]"}`}>
             
             <div className="w-full lg:w-1/4 flex justify-center">
               <UserBox />
