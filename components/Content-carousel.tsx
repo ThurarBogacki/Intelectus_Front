@@ -47,12 +47,7 @@ export default function ContentCarousel({ courses }: ContentCarouselProps) {
           ref={swiperRef}
           modules={[Navigation]}
           spaceBetween={24}
-          slidesPerView={1.2}
-          breakpoints={{
-            640: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
+          slidesPerView={"auto"}
           navigation={false}
           className="w-full"
         >

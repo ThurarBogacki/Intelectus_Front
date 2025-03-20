@@ -4,12 +4,19 @@ import Navbar from "../../components/Navbar";
 import { useTheme } from "../../context/ThemeContext";
 import { FaRegMoon } from "react-icons/fa";
 import { BsSun } from "react-icons/bs";
-import MarketplaceItem from "../../components/Marketplace-item";
+import MarketplaceCarousel from "../../components/Marketplace-carousel";
 
 export default function Home() {
   const { theme, toggleTheme } = useTheme();
 
   const items = [
+    { type: "Curso online", title: "Workshop de Planejamento Estratégico - Ao vivo e Online", accessLink: "#", detailLink: "#", image:"/images/MarketplaceIcons/holder.png"},
+    { type: "Curso online", title: "Workshop de Planejamento Estratégico - Ao vivo e Online", accessLink: "#", detailLink: "#", image:"/images/MarketplaceIcons/holder.png"},
+    { type: "Curso online", title: "Workshop de Planejamento Estratégico - Ao vivo e Online", accessLink: "#", detailLink: "#", image:"/images/MarketplaceIcons/holder.png"},
+    { type: "Curso online", title: "Workshop de Planejamento Estratégico - Ao vivo e Online", accessLink: "#", detailLink: "#", image:"/images/MarketplaceIcons/holder.png"},
+    { type: "Curso online", title: "Workshop de Planejamento Estratégico - Ao vivo e Online", accessLink: "#", detailLink: "#", image:"/images/MarketplaceIcons/holder.png"},
+    { type: "Curso online", title: "Workshop de Planejamento Estratégico - Ao vivo e Online", accessLink: "#", detailLink: "#", image:"/images/MarketplaceIcons/holder.png"},
+    { type: "Curso online", title: "Workshop de Planejamento Estratégico - Ao vivo e Online", accessLink: "#", detailLink: "#", image:"/images/MarketplaceIcons/holder.png"},
     { type: "Curso online", title: "Workshop de Planejamento Estratégico - Ao vivo e Online", accessLink: "#", detailLink: "#", image:"/images/MarketplaceIcons/holder.png"}
   ]
 
@@ -19,6 +26,10 @@ export default function Home() {
         <Navbar />
       
         <div className="ml-4 md3:ml-[72px] md2:ml-[18%] w-[calc(100vw-16px)] md3:w-[calc(100vw-72px)] md2:w-[calc(100vw-18%)]">
+
+          <div>
+            <MarketplaceCarousel content={items} />
+          </div>
 
           
 

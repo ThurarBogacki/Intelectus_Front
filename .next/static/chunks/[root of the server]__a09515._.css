@@ -558,11 +558,6 @@ img, video {
   margin-bottom: 1.5rem;
 }
 
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
 .mb-14 {
   margin-bottom: 3.5rem;
 }
@@ -663,10 +658,6 @@ img, video {
   margin-top: 25px;
 }
 
-.mr-4 {
-  margin-right: 1rem;
-}
-
 .block {
   display: block;
 }
@@ -703,12 +694,28 @@ img, video {
   height: 180px;
 }
 
+.h-\[20px\] {
+  height: 20px;
+}
+
+.h-\[310px\] {
+  height: 310px;
+}
+
 .h-\[360px\] {
   height: 360px;
 }
 
+.h-\[40\%\] {
+  height: 40%;
+}
+
 .h-\[400px\] {
   height: 400px;
+}
+
+.h-\[60\%\] {
+  height: 60%;
 }
 
 .h-\[80px\] {
@@ -725,42 +732,6 @@ img, video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[70\%\] {
-  height: 70%;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[30\%\] {
-  height: 30%;
-}
-
-.h-\[310\] {
-  height: 310px;
-}
-
-.h-\[310px\] {
-  height: 310px;
-}
-
-.h-\[18px\] {
-  height: 18px;
-}
-
-.h-\[20px\] {
-  height: 20px;
-}
-
-.h-\[60\%\] {
-  height: 60%;
-}
-
-.h-\[40\%\] {
-  height: 40%;
 }
 
 .min-h-\[100px\] {
@@ -791,6 +762,10 @@ img, video {
   width: 1.5rem;
 }
 
+.w-\[120px\] {
+  width: 120px;
+}
+
 .w-\[160px\] {
   width: 160px;
 }
@@ -801,6 +776,10 @@ img, video {
 
 .w-\[250px\] {
   width: 250px;
+}
+
+.w-\[280px\] {
+  width: 280px;
 }
 
 .w-\[60\%\] {
@@ -823,32 +802,12 @@ img, video {
   width: 100%;
 }
 
-.w-\[\] {
-  width: ;
+.w-auto {
+  width: auto;
 }
 
-.w-\[100\] {
-  width: 100px;
-}
-
-.w-\[100px\] {
-  width: 100px;
-}
-
-.w-\[258px\] {
-  width: 258px;
-}
-
-.w-\[28px\] {
-  width: 28px;
-}
-
-.w-\[280px\] {
-  width: 280px;
-}
-
-.w-\[120px\] {
-  width: 120px;
+.w-fit {
+  width: fit-content;
 }
 
 .min-w-\[160px\] {
@@ -873,6 +832,10 @@ img, video {
 
 .max-w-md {
   max-width: 28rem;
+}
+
+.max-w-\[280px\] {
+  max-width: 280px;
 }
 
 .flex-1 {
@@ -908,10 +871,6 @@ img, video {
 
 .resize {
   resize: both;
-}
-
-.columns-2 {
-  columns: 2;
 }
 
 .grid-cols-1 {
@@ -1038,31 +997,22 @@ img, video {
   border-radius: .375rem;
 }
 
-.rounded-xl {
-  border-radius: .75rem;
-}
-
-.rounded {
-  border-radius: .25rem;
-}
-
 .rounded-sm {
   border-radius: .125rem;
 }
 
-.rounded-s {
-  border-start-start-radius: .25rem;
-  border-end-start-radius: .25rem;
-}
-
-.rounded-t-lg {
-  border-top-left-radius: .5rem;
-  border-top-right-radius: .5rem;
+.rounded-xl {
+  border-radius: .75rem;
 }
 
 .rounded-b-lg {
   border-bottom-right-radius: .5rem;
   border-bottom-left-radius: .5rem;
+}
+
+.rounded-t-lg {
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
 }
 
 .border {
@@ -1080,6 +1030,11 @@ img, video {
 .border-\[\#00FFF3\] {
   --tw-border-opacity: 1;
   border-color: rgb(0 255 243 / var(--tw-border-opacity, 1));
+}
+
+.border-\[\#11CEC5\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(17 206 197 / var(--tw-border-opacity, 1));
 }
 
 .border-\[\#5e5e5e57\] {
@@ -1104,23 +1059,6 @@ img, video {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
-}
-
-.border-\[\] {
-  border-color: ;
-}
-
-.border-\[\#\] {
-  border-color: # ;
-}
-
-.border-\[\#00FF3\] {
-  border-color: #00FF3;
-}
-
-.border-\[\#11CEC5\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(17 206 197 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#00FFF3\] {
@@ -1361,6 +1299,10 @@ img, video {
   line-height: 1;
 }
 
+.text-\[10px\] {
+  font-size: 10px;
+}
+
 .text-\[14px\] {
   font-size: 14px;
 }
@@ -1400,18 +1342,6 @@ img, video {
 .text-xs {
   font-size: .75rem;
   line-height: 1rem;
-}
-
-.text-\[10px\] {
-  font-size: 10px;
-}
-
-.text-\[11px\] {
-  font-size: 11px;
-}
-
-.text-\[12px\] {
-  font-size: 12px;
 }
 
 .font-\[14px\] {
@@ -1533,27 +1463,6 @@ img, video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\] {
-  color: ;
-}
-
-.text-\[\#\] {
-  color: # ;
-}
-
-.text-\[\#0011CC\] {
-  --tw-text-opacity: 1;
-  color: rgb(0 17 204 / var(--tw-text-opacity, 1));
-}
-
-.text-\[112x\] {
-  color: 112x;
-}
-
-.text-\[12x\] {
-  color: 12x;
 }
 
 .antialiased {
@@ -1753,6 +1662,11 @@ body {
 }
 
 @media (width >= 1024px) {
+  .lg\:mx-16 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
   .lg\:w-1\/4 {
     width: 25%;
   }
