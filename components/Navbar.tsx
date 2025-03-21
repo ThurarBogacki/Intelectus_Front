@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
 <div className={`hidden md3:flex fixed left-0 top-0 h-screen bg-[#1F1F1F] transition-all duration-300  flex-col items-center z-50
-  ${isOpen ? "w-[250px]" : "w-[72px] md2:w-[20%] md2:max-w-[350px]"}`}>
+  ${isOpen ? "w-[250px]" : "w-[72px] md2:w-[20%] "}`}>
 
       {/* Logo */}
       <div className="w-full h-[80px] items-center justify-center md2:flex hidden p-5 mt-[20px]">
@@ -51,7 +51,7 @@ export default function Navbar() {
           return (
             <Link key={index} href={item.href} className="w-full">
               <div
-                className={`flex  gap-3 p-2 md2:p-3 w-full cursor-pointer transition-all duration-300 
+                className={`flex  gap-3 p-2 md2:py-6 w-full cursor-pointer transition-all duration-300 
                   ${isActive ? "text-[#00FFF3]" : "text-[#B2B2B2]"} ${isOpen ? "items-start justify-normal ml-[20px] p-3" : "md2:items-start md2:justify-normal items-center text-center justify-center"}`}
               >
                 <Image 

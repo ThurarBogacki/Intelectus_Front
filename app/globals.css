@@ -37,11 +37,11 @@ body {
 .bg-overlay::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 10%;
+  left: 55%;
   width: 600px; /* Ajuste o tamanho conforme necessário */
   height: 600px;
-  background: rgba(91, 196, 255, 0.48); /* Azul com transparência */
+  background: rgba(91, 196, 255, 0.28); /* Azul com transparência */
   border-radius: 50%;
   transform: translate(-50%, -50%);
   filter: blur(100px); /* Desfocar para suavizar a transição */
