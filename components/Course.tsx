@@ -1,4 +1,5 @@
-import CourseButton from "./Course-button";
+import Play from "../public/images/ComprasIcons/play.svg"
+import Image from "next/image";
 
 interface CourseProps {
   title: string;
@@ -13,14 +14,17 @@ export default function Course({ title, curr_module, image, content, link}: Cour
     <>
       {content === 'course-module' && (
         <div 
-          className="relative w-[160px] h-[180px] lg:w-[210px] lg:h-[210px] rounded-lg overflow-hidden bg-cover bg-center flex items-center justify-center"
-          style={{ backgroundImage: `url(${image})` }}
+          className="relative w-[160px] h-[180px] md3:w-[210px] md3:h-[210px] rounded-lg overflow-hidden bg-cover bg-center flex items-center justify-center cursor-pointer"
+          onClick={() => window.open(link)}
         >
-          <div className="absolute inset-0 bg-black bg-opacity-70"></div>
-          <div className="relative z-10 text-center text-[#FFF] flex flex-col justify-between h-full w-full p-4">
+          <div 
+            className="absolute inset-0 grayscale bg-cover bg-center"
+            style={{ backgroundImage: `url(${image})` }}
+          ></div>
+          <div className="relative z-10 text-center text-[#FFF] flex flex-col justify-between items-center h-full w-full p-4">
             <h2 className="text-base font-bold">{ title }</h2>
-            <div className="mb-10">
-              <CourseButton height={23} width={90} onClick={() => console.log({ link })}>{ curr_module }</CourseButton>
+            <div className="flex justify-center items-center text-black rounded-lg w-[60%] min-h-[30px] bg-[#00FFF3] text-xs font-bold">
+              {curr_module}
             </div>
           </div>
         </div>
@@ -28,16 +32,22 @@ export default function Course({ title, curr_module, image, content, link}: Cour
 
       {content === 'course' && (
         <div
-          className="relative w-[180px] h-[360px] lg:w-[240px] lg:h-[420px] rounded-lg overflow-hidden bg-cover bg-center flex items-center justify-center"
+          className="relative w-[180px] h-[360px] md3:w-[240px] md3:h-[420px] rounded-lg overflow-hidden bg-cover bg-center flex flex-col items-center justify-center"
           style={{ backgroundImage: `url(${image})` }}
         >
-          <div className="absolute inset-0 bg-black/40"></div> 
+          <div className="absolute inset-0 bg-black/40"></div>
           
-          <div className="relative z-10 text-center text-[#FFF]">
-            <h2 className="text-base font-bold mb-8">{title}</h2>
-            <CourseButton height={23} width={90} onClick={() => console.log({ link })}>
+          <div className="relative z-10 text-center text-[#FFF] flex flex-col items-center justify-between h-full w-full p-5">
+            <button 
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              onClick={() => window.open(link)}
+            >
+              <Image src={Play} alt="play" />
+            </button>
+            <h2 className="text-base font-bold mt-20 mb-5">{title}</h2>
+            <div className="flex justify-center items-center text-black rounded-lg w-[60%] min-h-[30px] bg-[#00FFF3] text-xs font-bold">
               {curr_module}
-            </CourseButton>
+            </div>
           </div>
         </div>
       )}

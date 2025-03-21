@@ -1,7 +1,7 @@
 {
   "pages": {
     "/auth/cadastro/page": [
-      "static/chunks/[root of the server]__501b62._.css",
+      "static/chunks/[root of the server]__a09515._.css",
       "static/chunks/7d341_next_dist_2c876d._.js",
       "static/chunks/_9eef6d._.js",
       "static/chunks/app_layout_4a36d7.js",
@@ -11,7 +11,7 @@
       "static/chunks/e056e_react-icons_fa_index_mjs_19ed18._.js",
       "static/chunks/e056e_react-icons_lib_046ab6._.js",
       "static/chunks/app_auth_cadastro_page_tsx_70a62a._.js",
-      "static/chunks/app_auth_cadastro_page_tsx_084113._.js",
+      "static/chunks/app_auth_cadastro_page_tsx_4528d8._.js",
       "static/chunks/7d341_next_dist_compiled_react-dom_78bccc._.js",
       "static/chunks/7d341_next_dist_compiled_3d6fe6._.js",
       "static/chunks/7d341_next_dist_client_ea142b._.js",

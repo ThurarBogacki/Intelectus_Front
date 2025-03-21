@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import Course from './Course';
 import Image from 'next/image';
-import arrow from '../public/images/ComprasIcons/arrow.svg';
+import arrow from '../public/images/arrow.svg';
 import { useTheme } from '../context/ThemeContext';
 import { useEffect, useRef } from 'react';
 
@@ -27,23 +27,27 @@ export default function ContentCarousel({ courses }: ContentCarouselProps) {
   }, []);
 
   return (
-    <div className="relative w-full mx-auto overflow-hidden">
-      <div className="flex justify-between items-center mt-10 mb-4">
+    <div className="relative w-full overflow-hidden">
+      <div className="flex justify-between items-center mt-10 mb-4 mx-4 md3:mx-8 md2:mx-16">
         <h2 className={`text-base ${theme === "dark" ? "text-[#D9D9D9]" : "text-[#6C6C6C]"}`}>CONTEÚDO DO CURSO</h2>
+
+        <div className='right-4 md:right-8 space-x-2 md:space-x-4 grid grid-cols-2'>
+          <button className="col-span-1 custom-prev-2">
+            <Image src={arrow} alt="Scroll left" className='rotate-180 w-5 h-5' />
+          </button>
+          <button className="col-span-1 custom-next-2">
+            <Image src={arrow} alt="Scroll right" className='w-5 h-5' />
+          </button>
+        </div>
+
       </div>
 
-      <div className="relative w-full overflow-hidden">
-        {/* Slider */}
+      <div className="container mx-auto ml-4 md3:ml-8 md2:ml-16">
         <Swiper
           ref={swiperRef}
           modules={[Navigation]}
           spaceBetween={24}
-          slidesPerView={1.2}
-          breakpoints={{
-            640: { slidesPerView: 2 },
-            768: { slidesPerView: 3 },
-            1024: { slidesPerView: 4 },
-          }}
+          slidesPerView={"auto"}
           navigation={false}
           className="w-full"
         >
@@ -60,14 +64,6 @@ export default function ContentCarousel({ courses }: ContentCarouselProps) {
           ))}
         </Swiper>
 
-        <div className="absolute top-0 right-0 flex space-x-2 p-2 z-10">
-          <button className="custom-prev-2">
-            <Image src={arrow} alt="Scroll left" className="rotate-180 w-6 h-6" />
-          </button>
-          <button className="custom-next-2">
-            <Image src={arrow} alt="Scroll right" className="w-6 h-6" />
-          </button>
-        </div>
       </div>
     </div>
   );

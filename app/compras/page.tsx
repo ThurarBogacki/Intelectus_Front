@@ -4,8 +4,8 @@ import Navbar from "../../components/Navbar";
 import { useTheme } from "../../context/ThemeContext";
 import { FaRegMoon } from "react-icons/fa";
 import { BsSun } from "react-icons/bs";
-import CourseCarousel from "../../components/CourseCarousel";
-import ContentCarousel from "../../components/ContentCarousel";
+import CourseCarousel from "../../components/Course-carousel";
+import ContentCarousel from "../../components/Content-carousel";
 import { ContentBox } from "../../components/Content-box";
 
 export default function Home() {
@@ -34,17 +34,17 @@ export default function Home() {
       <div className={`relative w-full min-h-screen flex overflow-hidden ${theme === "dark" ? "bg-[#171717] text-[#D9D9D9] bg-overlay" : "bg-white text-[#6C6C6C]"}`}>
         <Navbar />
 
-        <div className="ml-[30px] md3:ml-[90px] md2:ml-[20%] w-[calc(100vw-150px)] lg:w-[calc(100vw-22%)]">
+        <div className="ml-4 md3:ml-[72px] md2:ml-[18%] w-[calc(100vw-16px)] md3:w-[calc(100vw-72px)] md2:w-[calc(100vw-18%)]">
 
-          <div className="sm:mx-4 md:mx-8 lg:mx-16">
+          <div>
             <CourseCarousel courses={courses} />
           </div>
 
-          <div className="sm:mx-4 md:mx-8 lg:mx-16">
+          <div>
             <ContentCarousel courses={content} />
           </div>
 
-          <div className="flex flex-col flex-1 px-6 md:px-8 xl:px-16 max-w-[94%]">
+          <div className="flex flex-col flex-1 px-4 md3:px-8 md2:px-16">
             <div className="relative grid grid-cols-1 xl:grid-cols-4 gap-4 w-full mt-12 mb-16">
               <ContentBox title="Conteúdo">Lorem ipsum dolor sit amet</ContentBox>
               <ContentBox title="Conteúdo">Lorem ipsum dolor sit amet</ContentBox>
