@@ -14,7 +14,7 @@ export default function Course({ title, curr_module, image, content, link}: Cour
     <>
       {content === 'course-module' && (
         <div 
-          className="relative w-[160px] h-[180px] md3:w-[210px] md3:h-[210px] rounded-lg overflow-hidden bg-cover bg-center flex items-center justify-center cursor-pointer"
+          className="relative w-[210px] h-[210px] rounded-lg overflow-hidden bg-cover bg-center flex items-center justify-center cursor-pointer"
           onClick={() => window.open(link)}
         >
           <div 
@@ -32,7 +32,7 @@ export default function Course({ title, curr_module, image, content, link}: Cour
 
       {content === 'course' && (
         <div
-          className="relative w-[180px] h-[360px] md3:w-[240px] md3:h-[420px] rounded-lg overflow-hidden bg-cover bg-center flex flex-col items-center justify-center"
+          className="relative w-[240px] h-[420px] rounded-lg overflow-hidden bg-cover bg-center flex flex-col items-center justify-center"
           style={{ backgroundImage: `url(${image})` }}
         >
           <div className="absolute inset-0 bg-black/40"></div>

@@ -1,9 +1,6 @@
 {
-  "/marketplace/page": "app/marketplace/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/compras/page": "app/compras/page.js",
-  "/planos/page": "app/planos/page.js",
-  "/dashboard/page": "app/dashboard/page.js",
+  "/page": "app/page.js",
   "/auth/login/page": "app/auth/login/page.js",
-  "/auth/cadastro/page": "app/auth/cadastro/page.js"
+  "/marketplace/page": "app/marketplace/page.js",
+  "/_not-found/page": "app/_not-found/page.js"
 }

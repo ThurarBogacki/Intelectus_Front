@@ -53,7 +53,7 @@ export default function CourseCarousel({ courses }: CourseCarouselProps) {
           className="w-full"
         >
           {courses.map((course, index) => (
-            <SwiperSlide key={index} className="flex justify-center max-w-[240px]">
+            <SwiperSlide key={index} className="flex justify-center max-w-[210px]">
               <Course
                 title={course.title}
                 curr_module={course.curr_module}
