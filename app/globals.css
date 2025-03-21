@@ -37,7 +37,7 @@ body {
 .bg-overlay::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 500px;
   left: 50%;
   width: 600px; /* Ajuste o tamanho conforme necessário */
   height: 600px;
@@ -46,6 +46,21 @@ body {
   transform: translate(-50%, -50%);
   filter: blur(100px); /* Desfocar para suavizar a transição */
   z-index: 0;
+}
+
+@media (min-width: 600px) {
+  .bg-overlay::before {
+    width: 600px;
+    left: calc(50% + 36px);
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .bg-overlay::before {
+    width: 600px;
+    left: calc(59%);
+  }
 }
 
 .swiper-container {

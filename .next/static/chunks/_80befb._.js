@@ -289,7 +289,7 @@ const PlanCard = ({ children })=>{
     _s();
     const { theme } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$ThemeContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTheme"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$1$2e$7_react$2d$dom$40$19$2e$0$2e$0_react$40$19$2e$0$2e$0_$5f$react$40$19$2e$0$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: `relative max-w-[252px] flex flex-col justify-between h-full border border-[#888] rounded-3xl p-4 col-span-1 m-4 xl:m-6 2xl:m-8
+        className: `relative flex flex-col justify-between h-full border border-[#888] rounded-3xl p-4 col-span-1 m-2 md3:m-3 md2:m-4
       ${theme === 'dark' ? 'text-[#FFF] bg-[#ffffff1f]' : 'text-[#6C6C6C] bg-[#4444440f]'}`,
         children: children
     }, void 0, false, {
