@@ -6,6 +6,10 @@ import { FaRegMoon } from "react-icons/fa";
 import { BsSun } from "react-icons/bs";
 import MarketplaceCarousel from "../../components/Marketplace-carousel";
 import search from "../../public/images/MarketplaceIcons/search.svg"
+import bag from "../../public/images/MarketplaceIcons/bag-tick.svg"
+import card from "../../public/images/MarketplaceIcons/card.svg"
+import wifi from "../../public/images/MarketplaceIcons/wifi.svg"
+import message from "../../public/images/MarketplaceIcons/message.svg"
 import Image from "next/image";
 import TagButtons from "../../components/Tag-buttons";
 import CategoryButton from "../../components/Category-button";
@@ -38,7 +42,7 @@ export default function Home() {
             <p className="text-lg font-bold mt-3">Aprendizado que transforma.</p>
             <p className="text-4xl font-bold mt-3">Desenvolva novas habilidades</p>
             <p className="text-4xl font-bold">para alcançar seus objetivos.</p>
-            <p className="text-4xl text-[#00FFF3] font-bold">Comece agora!</p>
+            <p className={`text-4xl font-bold ${theme === "dark" ? "text-[#00FFF3]" : "text-[#11CEC5]"}`}>Comece agora!</p>
             <div className="inline-flex mt-4 mb-10 p-2 border rounded-xl border-[#11CEC5]">
               <input type="text" className="bg-inherit" placeholder="O que você está procurando?" />
               <button>
@@ -72,6 +76,45 @@ export default function Home() {
             <MarketplaceCarousel title={"Mais vendidos do Intelectus Marketplace"} content={items2} idNext="custom-next-2" idPrev="custom-prev-2" />
           </div>
 
+          <div className="relative min-h-[340px] grid justify-items-center items-center text-center mx-4 md3:mx-8 md2:mx-16 mt-16 px-2 md3:px-4 md2:px-8 border rounded-3xl border-[#11CEC5]">
+            <p className="font-semibold text-2xl mt-8">Desenvolva uma habilidade nova de onde estiver.</p>
+            <p className="text-base mt-2">Explore nosso ambiente seguro e cheio de funcionalidades.</p>
+
+            <div className="grid grid-cols-1 md3:grid-cols-2 md2:grid-cols-4 mt-6 mb-4 md3:mb-10 gap-3">
+
+              <div className={`grid justify-items-center text-center p-4 rounded-lg ${theme === "dark" ? "bg-[#363636]" : "bg-[#DFDFDF] text-[#6C6C6C]"}`}>
+                <Image src={bag} alt="Sacola de compras" className="mt-6" />
+                <p className="text-xs mt-3">Encontre os melhores conteúdos</p>
+                <p className="text-[10px] mt-2 mb-6">Fazemos uma seleção variada para você encontrar o que procura.</p>
+              </div>
+
+              <div className={`grid justify-items-center text-center p-4 rounded-lg ${theme === "dark" ? "bg-[#363636]" : "bg-[#DFDFDF] text-[#6C6C6C]"}`}>
+                <Image src={card} alt="Sacola de compras" className="mt-6" />
+                <p className="text-xs mt-3">Escolha a forma de pagamento que preferir</p>
+                <p className="text-[10px] mt-2 mb-6">Compre com um ou dois cartões, débito online, boleto PayPal ou Google Pay.</p>
+              </div>
+
+              <div className={`grid justify-items-center text-center p-4 rounded-lg ${theme === "dark" ? "bg-[#363636]" : "bg-[#DFDFDF] text-[#6C6C6C]"}`}>
+                <Image src={wifi} alt="Sacola de compras" className="mt-6" />
+                <p className="text-xs mt-3">Acesse de onde quiser</p>
+                <p className="text-[10px] mt-2 mb-6">Baixe o conteúdo e leve-o com você no ônibus, no avião ou em qualquer lugar!</p>
+              </div>
+
+              <div className={`grid justify-items-center text-center p-4 rounded-lg ${theme === "dark" ? "bg-[#363636]" : "bg-[#DFDFDF] text-[#6C6C6C]"}`}>
+                <Image src={message} alt="Sacola de compras" className="mt-6" />
+                <p className="text-xs mt-3">Interaja com Produtores</p>
+                <p className="text-[10px] mt-2 mb-6">Comente nos vídeos, tire suas dúvidas e aproveite o conteúdo!</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div className="flex justify-center items-center my-16">
+            <button className={`h-[40px] min-w-[250px] text-[#022E2C] text-base rounded-lg px-4 ${theme === "dark" ? "bg-[#00FFF3]" : "bg-[#11CEC5]"}`}>
+              Mostrar todos os produtos <span className="ml-1">→</span>
+            </button>
+          </div>
           
 
           <button

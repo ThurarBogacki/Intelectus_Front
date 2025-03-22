@@ -11,7 +11,7 @@ const TagButtons: React.FC<TagButtonsProps> = ({ tags }) => {
       {tags.map((tag, index) => (
         <span
           key={index}
-          className="h-8 px-10 text-sm rounded-full bg-[#00A0A6] cursor-pointer flex items-center justify-center"
+          className="h-8 px-10 text-sm text-[#FFF] rounded-full bg-[#00A0A6] cursor-pointer flex items-center justify-center"
         >
           {tag}
         </span>
